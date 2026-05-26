@@ -1,0 +1,46 @@
+title = "Diogel Netlify Configuration File"
+
+[build]
+publish = "dist"
+command = "pnpm run build"
+
+[dev]
+framework = "nuxt"
+command = "pnpm run dev" # Command to start your dev server
+port = 8000
+publish = "dist" # The path to your static content folder
+autoLaunch = true # a Boolean value that determines if Netlify Dev launches the local server address in your browser
+
+
+[build.environment]
+NODE_VERSION = "24.7.0"
+NODE_OPTIONS = "--max-old-space-size=8192"
+
+
+
+
+
+# [[redirects]]
+#     from = "/*"
+#     to = "/index.html"
+#     status = 200
+
+[[headers]]
+for = "/manifest.webmanifest"
+[headers.values]
+Content-Type = "application/manifest+json"
+
+[[headers]]
+for = "/assets/*"
+[headers.values]
+cache-control = "max-age=31536000, immutable"
+
+[[headers]]
+for = "/well-known/*"
+[headers.values]
+Access-Control = "Access-Control-Allow-Origin: *"
+
+
+
+[context.branch-deploy]
+command = "NODE_OPTIONS=\"--max-old-space-size=8192\" pnpm run build"
