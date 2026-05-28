@@ -20,12 +20,6 @@ const columns = [{
     label: 'GitHub',
     to: 'https://github.com/threenine'
   }]
-}, {
-  label: 'Company',
-  children: [{
-    label: 'Threenine',
-    to: 'https://threenine.io'
-  }]
 }]
 </script>
 
@@ -43,9 +37,14 @@ const columns = [{
     </template>
 
     <template #left>
-      <p class="text-muted text-sm">
-        © {{ new Date().getFullYear() }} Threenine. All rights reserved.
-      </p>
+      <nuxt-link
+        to="https://find-and-update.company-information.service.gov.uk/company/05608093"
+        rel="nofollow"
+        class="mt-8 dark:text-gray-200 text-gray-900 md:order-1 md:mt-0 hover:underline text-xs"
+      >
+        &copy; {{ new Date().getFullYear() }} threenine.io registered in England & Wales 05608093 VAT
+        no. GB 900383850
+      </nuxt-link>
     </template>
 
     <template #right>
@@ -54,14 +53,6 @@ const columns = [{
         target="_blank"
         icon="i-simple-icons-github"
         aria-label="Threenine on GitHub"
-        color="neutral"
-        variant="ghost"
-      />
-      <UButton
-        to="https://threenine.io"
-        target="_blank"
-        icon="i-lucide-globe"
-        aria-label="Threenine website"
         color="neutral"
         variant="ghost"
       />

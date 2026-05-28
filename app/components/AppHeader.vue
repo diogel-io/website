@@ -13,10 +13,6 @@ const items = computed(() => [{
   label: 'Bancwr',
   to: '/bancwr',
   active: route.path.startsWith('/bancwr')
-}, {
-  label: 'Docs',
-  to: '/docs',
-  active: route.path.startsWith('/docs')
 }])
 </script>
 

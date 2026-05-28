@@ -12,8 +12,8 @@ const logoSrc = computed(() =>
   <NuxtImg
     :src="logoSrc"
     alt="Diogel"
-    width="75"
-    height="75"
+    width="60"
+    height="60"
     class="h-20 w-auto"
   />
 </template>
