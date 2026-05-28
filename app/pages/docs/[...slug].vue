@@ -26,7 +26,7 @@ useSeoMeta({
   ogDescription: description
 })
 
-defineOgImage('Diogel', { title, description, headline: 'Docs' })
+useHead({ link: [{ rel: 'canonical', href: `https://diogel.io${route.path}` }] })
 </script>
 
 <template>

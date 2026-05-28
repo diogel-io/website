@@ -5,8 +5,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/ui',
     '@nuxt/content',
-    '@vueuse/nuxt',
-    'nuxt-og-image'
+    '@vueuse/nuxt'
   ],
 
   devtools: {
@@ -45,7 +44,4 @@ export default defineNuxtConfig({
     }
   },
 
-  ogImage: {
-    zeroRuntime: true
-  }
 })
