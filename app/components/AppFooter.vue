@@ -1,52 +1,32 @@
 <script setup lang="ts">
 const columns = [{
-  label: 'Resources',
+  label: 'Products',
   children: [{
-    label: 'Help center'
+    label: 'Porwr',
+    to: '/porwr'
   }, {
-    label: 'Docs'
+    label: 'Android',
+    to: '/android'
   }, {
-    label: 'Roadmap'
-  }, {
-    label: 'Changelog'
+    label: 'Bancwr',
+    to: '/bancwr'
   }]
 }, {
-  label: 'Features',
+  label: 'Resources',
   children: [{
-    label: 'Affiliates'
+    label: 'Docs',
+    to: '/docs'
   }, {
-    label: 'Portal'
-  }, {
-    label: 'Jobs'
-  }, {
-    label: 'Sponsors'
+    label: 'GitHub',
+    to: 'https://github.com/threenine'
   }]
 }, {
   label: 'Company',
   children: [{
-    label: 'About'
-  }, {
-    label: 'Pricing'
-  }, {
-    label: 'Careers'
-  }, {
-    label: 'Blog'
+    label: 'Threenine',
+    to: 'https://threenine.io'
   }]
 }]
-
-const toast = useToast()
-
-const email = ref('')
-const loading = ref(false)
-
-function onSubmit() {
-  loading.value = true
-
-  toast.add({
-    title: 'Subscribed!',
-    description: 'You\'ve been subscribed to our newsletter.'
-  })
-}
 </script>
 
 <template>
@@ -58,64 +38,30 @@ function onSubmit() {
   <UFooter :ui="{ top: 'border-b border-default' }">
     <template #top>
       <UContainer>
-        <UFooterColumns :columns="columns">
-          <template #right>
-            <form @submit.prevent="onSubmit">
-              <UFormField
-                name="email"
-                label="Subscribe to our newsletter"
-                size="lg"
-              >
-                <UInput
-                  v-model="email"
-                  type="email"
-                  class="w-full"
-                  placeholder="Enter your email"
-                >
-                  <template #trailing>
-                    <UButton
-                      type="submit"
-                      size="xs"
-                      color="neutral"
-                      label="Subscribe"
-                    />
-                  </template>
-                </UInput>
-              </UFormField>
-            </form>
-          </template>
-        </UFooterColumns>
+        <UFooterColumns :columns="columns" />
       </UContainer>
     </template>
 
     <template #left>
       <p class="text-muted text-sm">
-        Built with Nuxt UI • © {{ new Date().getFullYear() }}
+        © {{ new Date().getFullYear() }} Threenine. All rights reserved.
       </p>
     </template>
 
     <template #right>
       <UButton
-        to="https://go.nuxt.com/discord"
-        target="_blank"
-        icon="i-simple-icons-discord"
-        aria-label="Nuxt on Discord"
-        color="neutral"
-        variant="ghost"
-      />
-      <UButton
-        to="https://go.nuxt.com/x"
-        target="_blank"
-        icon="i-simple-icons-x"
-        aria-label="Nuxt on X"
-        color="neutral"
-        variant="ghost"
-      />
-      <UButton
-        to="https://github.com/nuxt-ui-templates/saas"
+        to="https://github.com/threenine"
         target="_blank"
         icon="i-simple-icons-github"
-        aria-label="Nuxt UI on GitHub"
+        aria-label="Threenine on GitHub"
+        color="neutral"
+        variant="ghost"
+      />
+      <UButton
+        to="https://threenine.io"
+        target="_blank"
+        icon="i-lucide-globe"
+        aria-label="Threenine website"
         color="neutral"
         variant="ghost"
       />

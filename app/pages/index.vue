@@ -9,8 +9,7 @@ useSeoMeta({
   title,
   ogTitle: title,
   description,
-  ogDescription: description,
-  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/saas-light.png'
+  ogDescription: description
 })
 </script>
 
@@ -31,8 +30,6 @@ useSeoMeta({
           unwrap="p"
         />
       </template>
-
-      <PromotionalVideo />
     </UPageHero>
 
     <UPageSection
@@ -43,9 +40,7 @@ useSeoMeta({
       :orientation="section.orientation"
       :reverse="section.reverse"
       :features="section.features"
-    >
-      <ImagePlaceholder />
-    </UPageSection>
+    />
 
     <UPageSection
       :title="page.features.title"
@@ -59,30 +54,6 @@ useSeoMeta({
           spotlight
         />
       </UPageGrid>
-    </UPageSection>
-
-    <UPageSection
-      id="testimonials"
-      :headline="page.testimonials.headline"
-      :title="page.testimonials.title"
-      :description="page.testimonials.description"
-    >
-      <UPageColumns class="xl:columns-4">
-        <UPageCard
-          v-for="(testimonial, index) in page.testimonials.items"
-          :key="index"
-          variant="subtle"
-          :description="testimonial.quote"
-          :ui="{ description: 'before:content-[open-quote] after:content-[close-quote]' }"
-        >
-          <template #footer>
-            <UUser
-              v-bind="testimonial.user"
-              size="lg"
-            />
-          </template>
-        </UPageCard>
-      </UPageColumns>
     </UPageSection>
 
     <USeparator />

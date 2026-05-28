@@ -2,18 +2,21 @@
 const route = useRoute()
 
 const items = computed(() => [{
+  label: 'Porwr',
+  to: '/porwr',
+  active: route.path.startsWith('/porwr')
+}, {
+  label: 'Android',
+  to: '/android',
+  active: route.path.startsWith('/android')
+}, {
+  label: 'Bancwr',
+  to: '/bancwr',
+  active: route.path.startsWith('/bancwr')
+}, {
   label: 'Docs',
   to: '/docs',
   active: route.path.startsWith('/docs')
-}, {
-  label: 'Pricing',
-  to: '/pricing'
-}, {
-  label: 'Blog',
-  to: '/blog'
-}, {
-  label: 'Changelog',
-  to: '/changelog'
 }])
 </script>
 
@@ -34,27 +37,10 @@ const items = computed(() => [{
       <UColorModeButton />
 
       <UButton
-        icon="i-lucide-log-in"
-        color="neutral"
-        variant="ghost"
-        to="/login"
-        class="lg:hidden"
-      />
-
-      <UButton
-        label="Sign in"
-        color="neutral"
-        variant="outline"
-        to="/login"
-        class="hidden lg:inline-flex"
-      />
-
-      <UButton
-        label="Sign up"
+        label="Get Started"
         color="neutral"
         trailing-icon="i-lucide-arrow-right"
-        class="hidden lg:inline-flex"
-        to="/signup"
+        to="/docs/getting-started"
       />
     </template>
 
@@ -68,17 +54,9 @@ const items = computed(() => [{
       <USeparator class="my-6" />
 
       <UButton
-        label="Sign in"
+        label="Get Started"
         color="neutral"
-        variant="subtle"
-        to="/login"
-        block
-        class="mb-3"
-      />
-      <UButton
-        label="Sign up"
-        color="neutral"
-        to="/signup"
+        to="/docs/getting-started"
         block
       />
     </template>
