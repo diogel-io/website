@@ -14,6 +14,6 @@ const logoSrc = computed(() =>
     alt="Diogel"
     width="60"
     height="60"
-    class="h-10 w-auto"
+    class="h-20 w-auto"
   />
 </template>
