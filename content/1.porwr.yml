@@ -1,0 +1,103 @@
+title: Porwr
+description: Secure Nostr signing for the browser — web apps get signatures, not your private key.
+seo:
+  title: Porwr — Secure Nostr Browser Signer
+  description: Porwr is a privacy-first NIP-07 browser extension that lets you sign Nostr events for web apps without exposing your private key.
+hero:
+  links:
+    - label: Install for Chrome
+      to: https://chromewebstore.google.com/detail/diogel/inhkmeiabnknligdjngmoocohdonoboa
+      icon: i-simple-icons-google
+      color: neutral
+      variant: outline
+      target: _blank
+    - label: Install for Firefox
+      to: https://addons.mozilla.org/en-US/firefox/addon/diogel/
+      icon: i-simple-icons-firefox
+      color: neutral
+      variant: outline
+      target: _blank
+    - label: View Source
+      to: https://github.com/threenine/diogel
+      icon: i-simple-icons-github
+      color: neutral
+      variant: outline
+      target: _blank
+sections:
+  - id: key-management
+    title: Encrypted key management
+    description: Your private keys are stored in an encrypted, password-protected vault that lives inside the browser extension. Keys are only decrypted in memory when the vault is unlocked.
+    orientation: horizontal
+    features:
+      - title: AES-GCM encryption
+        description: Keys encrypted at rest with password-derived keys
+        icon: i-lucide-lock
+      - title: Auto-lock
+        description: Vault locks after configurable inactivity
+        icon: i-lucide-timer
+      - title: Multiple identities
+        description: Manage and switch between Nostr accounts
+        icon: i-lucide-users
+  - id: nip07
+    title: Full NIP-07 implementation
+    description: Porwr implements the standard window.nostr interface. Any Nostr web app can request signatures through the browser signer.
+    orientation: horizontal
+    reverse: true
+    features:
+      - title: Event review
+        description: Review event details before signing
+        icon: i-lucide-eye
+      - title: Granular permissions
+        description: Per-site and per-event-kind permission controls
+        icon: i-lucide-settings-2
+      - title: One-click actions
+        description: Approve or reject with remember options
+        icon: i-lucide-check-circle
+  - id: privacy
+    title: Privacy focused
+    description: No analytics. No tracking. No data collection. Fully open source and auditable. Keys never leave the extension.
+    orientation: horizontal
+    features:
+      - title: No data collection
+        description: Zero analytics or telemetry
+        icon: i-lucide-shield-off
+      - title: Open source
+        description: Fully transparent MIT-licensed codebase
+        icon: i-lucide-code-2
+      - title: Local storage only
+        description: Keys never leave the extension boundary
+        icon: i-lucide-hard-drive
+features:
+  title: At a glance
+  description: Why Porwr is the right choice for browser-based Nostr signing.
+  items:
+    - title: NIP-07 compliant
+      description: Standard window.nostr interface — works with any Nostr web app
+      icon: i-lucide-check-check
+    - title: Chrome & Firefox
+      description: Published on Chrome Web Store and Firefox Add-ons
+      icon: i-lucide-globe
+    - title: Multiple accounts
+      description: Manage and switch between multiple Nostr identities
+      icon: i-lucide-user-circle
+    - title: Permission controls
+      description: Per-site and per-event-kind approval rules
+      icon: i-lucide-key-round
+    - title: Auto-lock vault
+      description: Configurable timeout keeps your keys safe
+      icon: i-lucide-timer
+    - title: Open source
+      description: MIT licensed, auditable, no hidden code
+      icon: i-lucide-code-2
+cta:
+  title: Start signing safely in your browser
+  description: Install Porwr and protect your Nostr keys from the web apps that request them.
+  links:
+    - label: Install for Chrome
+      to: https://chromewebstore.google.com/detail/diogel/inhkmeiabnknligdjngmoocohdonoboa
+      icon: i-simple-icons-google
+      target: _blank
+    - label: Install for Firefox
+      to: https://addons.mozilla.org/en-US/firefox/addon/diogel/
+      icon: i-simple-icons-firefox
+      target: _blank

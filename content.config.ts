@@ -25,36 +25,46 @@ const createLinkSchema = () => z.object({
   variant: variantEnum.optional()
 })
 
-const createImageSchema = () => z.object({
-  src: z.string().nonempty().editor({ input: 'media' }),
-  alt: z.string().optional(),
-  loading: z.enum(['lazy', 'eager']).optional(),
-  srcset: z.string().optional()
+const createSectionSchema = () => createBaseSchema().extend({
+  id: z.string().nonempty(),
+  orientation: orientationEnum.optional(),
+  reverse: z.boolean().optional(),
+  features: z.array(createFeatureItemSchema())
+})
+
+const createPageSchema = () => z.object({
+  hero: z.object({
+    links: z.array(createLinkSchema())
+  }),
+  sections: z.array(createSectionSchema()),
+  features: createBaseSchema().extend({
+    items: z.array(createFeatureItemSchema())
+  }),
+  cta: createBaseSchema().extend({
+    links: z.array(createLinkSchema())
+  })
 })
 
 export const collections = {
   index: defineCollection({
     source: '0.index.yml',
     type: 'page',
-    schema: z.object({
-      hero: z.object(({
-        links: z.array(createLinkSchema())
-      })),
-      sections: z.array(
-        createBaseSchema().extend({
-          id: z.string().nonempty(),
-          orientation: orientationEnum.optional(),
-          reverse: z.boolean().optional(),
-          features: z.array(createFeatureItemSchema())
-        })
-      ),
-      features: createBaseSchema().extend({
-        items: z.array(createFeatureItemSchema())
-      }),
-      cta: createBaseSchema().extend({
-        links: z.array(createLinkSchema())
-      })
-    })
+    schema: createPageSchema()
+  }),
+  porwr: defineCollection({
+    source: '1.porwr.yml',
+    type: 'page',
+    schema: createPageSchema()
+  }),
+  android: defineCollection({
+    source: '2.android.yml',
+    type: 'page',
+    schema: createPageSchema()
+  }),
+  bancwr: defineCollection({
+    source: '3.bancwr.yml',
+    type: 'page',
+    schema: createPageSchema()
   }),
   docs: defineCollection({
     source: '1.docs/**/*',

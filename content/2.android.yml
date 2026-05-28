@@ -1,0 +1,92 @@
+title: Android
+description: Dedicated mobile Nostr signing for Android — approve app requests while keeping keys on-device.
+seo:
+  title: Diogel Android — Mobile Nostr Signer
+  description: A dedicated Android-first Nostr signer that keeps private keys device-local and presents signing requests clearly.
+hero:
+  links:
+    - label: Coming Soon
+      to: /android
+      icon: i-lucide-clock
+      color: neutral
+      variant: outline
+    - label: View Source
+      to: https://github.com/threenine/diogel-android
+      icon: i-simple-icons-github
+      color: neutral
+      variant: outline
+      target: _blank
+sections:
+  - id: mobile-protection
+    title: Keys stay on your phone
+    description: No copying private keys into random mobile apps. The signer keeps sensitive material isolated on your device.
+    orientation: horizontal
+    features:
+      - title: Device-local vault
+        description: Private keys are stored securely on the phone
+        icon: i-lucide-smartphone
+      - title: Multi-identity support
+        description: Multiple Nostr accounts managed cleanly
+        icon: i-lucide-users
+      - title: Focused signer
+        description: A dedicated signer, not a bloated everything-app
+        icon: i-lucide-crosshair
+  - id: approval
+    title: Explicit approval flows
+    description: Every signing request is visible and deliberate. You see what's being asked before you approve or reject.
+    orientation: horizontal
+    reverse: true
+    features:
+      - title: Clear request UI
+        description: Signing requests presented with full context
+        icon: i-lucide-eye
+      - title: Approve or reject
+        description: Every request requires your explicit decision
+        icon: i-lucide-hand
+      - title: Remembered permissions
+        description: Remember approvals for trusted apps when appropriate
+        icon: i-lucide-check-circle
+  - id: nip55
+    title: NIP-55 signer flows
+    description: Android Diogel targets modern NIP-55 signer flows for app-to-signer requests.
+    orientation: horizontal
+    features:
+      - title: get_public_key
+        description: Share your public key with requesting apps
+        icon: i-lucide-key-round
+      - title: sign_event
+        description: Sign Nostr events without exposing the private key
+        icon: i-lucide-pen-tool
+      - title: NIP-04 & NIP-44
+        description: Encrypt and decrypt through the signer boundary
+        icon: i-lucide-lock
+features:
+  title: At a glance
+  description: What Android Diogel brings to mobile Nostr signing.
+  items:
+    - title: Device-local keys
+      description: Private keys never leave your phone
+      icon: i-lucide-shield
+    - title: NIP-55 flows
+      description: Modern app-to-signer Android signer support
+      icon: i-lucide-route
+    - title: Multi-identity
+      description: Switch between Nostr accounts cleanly
+      icon: i-lucide-user-circle
+    - title: Explicit approvals
+      description: No invisible signing, every request reviewed
+      icon: i-lucide-hand
+    - title: Intent flows
+      description: Android intent and ContentResolver signing patterns
+      icon: i-lucide-arrow-right-left
+    - title: Focused product
+      description: Dedicated signer, not a social client or wallet
+      icon: i-lucide-crosshair
+cta:
+  title: Coming soon to Android
+  description: A dedicated Nostr signer that keeps your keys safe on mobile. Watch this space.
+  links:
+    - label: View Source
+      to: https://github.com/threenine/diogel-android
+      icon: i-simple-icons-github
+      target: _blank
