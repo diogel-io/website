@@ -26,7 +26,7 @@ useSeoMeta({
   ogDescription: description
 })
 
-defineOgImage('Saas', { title, description, headline: 'Docs' })
+defineOgImage('Diogel', { title, description, headline: 'Docs' })
 </script>
 
 <template>

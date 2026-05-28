@@ -11,7 +11,7 @@ useSeoMeta({
   ogDescription: description
 })
 
-useHead({ link: [{ rel: 'canonical', href: 'https://diogel.io/bancwr' }] })
+defineOgImage('Diogel', { title, description, headline: 'Bancwr' })
 </script>
 
 <template>

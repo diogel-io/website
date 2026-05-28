@@ -11,7 +11,7 @@ useSeoMeta({
   ogDescription: description
 })
 
-useHead({ link: [{ rel: 'canonical', href: 'https://diogel.io/android' }] })
+defineOgImage('Diogel', { title, description, headline: 'Android' })
 </script>
 
 <template>
