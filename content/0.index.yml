@@ -10,7 +10,7 @@ hero:
       icon: i-lucide-rocket
       trailing: true
     - label: View on GitHub
-      to: https://github.com/threenine
+      to: https://github.com/threenine/diogelwebsite
       icon: i-simple-icons-github
       color: neutral
       variant: outline
