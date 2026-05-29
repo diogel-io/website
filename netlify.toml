@@ -16,10 +16,6 @@ autoLaunch = true # a Boolean value that determines if Netlify Dev launches the 
 NODE_VERSION = "24.7.0"
 NODE_OPTIONS = "--max-old-space-size=8192"
 
-
-
-
-
 # [[redirects]]
 #     from = "/*"
 #     to = "/index.html"
@@ -39,8 +35,6 @@ cache-control = "max-age=31536000, immutable"
 for = "/well-known/*"
 [headers.values]
 Access-Control = "Access-Control-Allow-Origin: *"
-
-
 
 [context.branch-deploy]
 command = "NODE_OPTIONS=\"--max-old-space-size=8192\" pnpm run build"
