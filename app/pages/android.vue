@@ -20,6 +20,7 @@ useHead({ link: [{ rel: 'canonical', href: 'https://diogel.io/android' }] })
       :title="page.title"
       :description="page.description"
       :links="page.hero.links"
+      :image="page.hero.image"
     />
 
     <UPageSection

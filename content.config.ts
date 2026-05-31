@@ -29,12 +29,14 @@ const createSectionSchema = () => createBaseSchema().extend({
   id: z.string().nonempty(),
   orientation: orientationEnum.optional(),
   reverse: z.boolean().optional(),
+  image: z.string().optional(),
   features: z.array(createFeatureItemSchema())
 })
 
 const createPageSchema = () => z.object({
   hero: z.object({
-    links: z.array(createLinkSchema())
+    links: z.array(createLinkSchema()),
+    image: z.string().optional(),
   }),
   sections: z.array(createSectionSchema()),
   features: createBaseSchema().extend({
