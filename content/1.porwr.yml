@@ -28,6 +28,7 @@ sections:
     title: Encrypted key management
     description: Your private keys are stored in an encrypted, password-protected vault that lives inside the browser extension. Keys are only decrypted in memory when the vault is unlocked.
     orientation: horizontal
+    image: /img/screenshots/porwr/key-management.png
     features:
       - title: AES-GCM encryption
         description: Keys encrypted at rest with password-derived keys
@@ -43,6 +44,7 @@ sections:
     description: Porwr implements the standard window.nostr interface. Any Nostr web app can request signatures through the browser signer.
     orientation: horizontal
     reverse: true
+    image: /img/screenshots/porwr/nip07-signing.png
     features:
       - title: Event review
         description: Review event details before signing
@@ -57,6 +59,7 @@ sections:
     title: Privacy focused
     description: No analytics. No tracking. No data collection. Fully open source and auditable. Keys never leave the extension.
     orientation: horizontal
+    image: /img/screenshots/porwr/privacy-dashboard.png
     features:
       - title: No data collection
         description: Zero analytics or telemetry
