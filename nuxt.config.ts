@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/ui',
     '@nuxt/content',
+    '@threenine/nuxt-fathom',
     '@vueuse/nuxt'
   ],
 
@@ -43,5 +44,12 @@ export default defineNuxtConfig({
       }
     }
   },
-
+  fathom: {
+    siteId: process.env.fathom_analytics_id
+  },
+  vite: {
+    optimizeDeps: {
+      include: []
+    }
+  }
 })
