@@ -36,7 +36,7 @@ const createSectionSchema = () => createBaseSchema().extend({
 const createPageSchema = () => z.object({
   hero: z.object({
     links: z.array(createLinkSchema()),
-    image: z.string().optional(),
+    image: z.string().optional()
   }),
   sections: z.array(createSectionSchema()),
   features: createBaseSchema().extend({

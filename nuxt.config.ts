@@ -35,6 +35,11 @@ export default defineNuxtConfig({
       crawlLinks: true
     }
   },
+  vite: {
+    optimizeDeps: {
+      include: []
+    }
+  },
 
   eslint: {
     config: {
@@ -46,10 +51,5 @@ export default defineNuxtConfig({
   },
   fathom: {
     siteId: process.env.fathom_analytics_id
-  },
-  vite: {
-    optimizeDeps: {
-      include: []
-    }
   }
 })
