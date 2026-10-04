@@ -1,12 +1,18 @@
 title: Bancwr
-description: Self-hosted Nostr signing for teams — shared brand authority without shared private-key chaos.
+description: A self-hosted Nostr bunker for teams. Bancwr holds your nsec on your own server and signs over NIP-46 for the people and apps you authorise, so nobody else ever handles the key.
 seo:
-  title: Bancwr — Self-Hosted Nostr Bunker for Teams
-  description: A self-hosted Nostr bunker for businesses, brands, and teams that need controlled signing access, recovery, and audit trails.
+  title: Bancwr — Self-Hosted Nostr Bunker (NIP-46) for Teams
+  description: Bancwr is a self-hosted NIP-46 Nostr bunker. It keeps one nsec on your server and signs for registered members and kind-scoped app connections, without sharing the private key.
 hero:
   links:
+    - label: Self-host it
+      to: https://github.com/diogel-io/bancwr#running-the-environment
+      icon: i-lucide-server
+      color: neutral
+      variant: outline
+      target: _blank
     - label: View Source
-      to: https://github.com/threenine/bancwr
+      to: https://github.com/diogel-io/bancwr
       icon: i-simple-icons-github
       color: neutral
       variant: outline
@@ -18,76 +24,80 @@ hero:
       variant: outline
 sections:
   - id: team-signing
-    title: Shared signing authority
-    description: Team members can request signatures without ever seeing the private key. Bancwr puts governance around who can sign and what they can sign.
+    title: Shared signing authority, no shared key
+    description: One Nostr identity, many members. Bancwr keeps the nsec on your server and your team works through it. Members sign in to the web console with a NIP-07 extension or a NIP-46 bunker:// string, and Bancwr never asks anyone for a private key.
     orientation: horizontal
     features:
       - title: Brand accounts
-        description: One Nostr identity, multiple authorised team members
+        description: One Nostr identity, multiple registered members
         icon: i-lucide-building-2
-      - title: Role-based access
-        description: Control who can sign what with role-based permissions
+      - title: Three roles
+        description: Administrator, user, and signer, checked on every request
         icon: i-lucide-users
       - title: No key distribution
-        description: Team members never receive the nsec
+        description: Members never receive the nsec, and there is no field to enter one
         icon: i-lucide-shield-off
-  - id: governance
-    title: Business continuity
-    description: When devices are lost or staff leave, the organisation still controls its Nostr identity. Recovery and offboarding built in.
+  - id: connections
+    title: Controlled app connections over NIP-46
+    description: Nostr apps use Bancwr as a remote signer, but only once an administrator lets them. Each connection starts from a single-use token issued for a named member and limited to the event kinds you list. There is no "sign everything" grant.
     orientation: horizontal
     reverse: true
     features:
-      - title: Key recovery
-        description: Shamir-style backup and recovery ceremonies
-        icon: i-lucide-key-round
-      - title: Audit logs
-        description: Compliance-oriented records of all signing activity
+      - title: Kind-scoped tokens
+        description: Single-use, limited to listed event kinds, valid for 1 hour to 7 days
+        icon: i-lucide-ticket
+      - title: Revocable connections
+        description: Revoke any connection, and removing a member ends theirs
+        icon: i-lucide-unplug
+      - title: Signing log
+        description: Administrators see recent signatures by event, kind, member, and time
         icon: i-lucide-file-text
-      - title: Kill switch
-        description: Instantly revoke access without rotating the key
-        icon: i-lucide-power
   - id: self-hosted
-    title: Self-hosted
-    description: Run Bancwr on your own infrastructure. Designed for Umbrel and Start9 deployment. Your keys, your server, your control.
+    title: Your server, your key
+    description: Run Bancwr with Podman or Docker Compose from versioned images on GitHub Container Registry. Signing happens over NIP-46 only. The HTTP API behind the web console manages the bunker and never signs.
     orientation: horizontal
     features:
-      - title: Docker deployment
-        description: Simple container-based deployment
-        icon: i-simple-icons-docker
-      - title: Umbrel & Start9
-        description: Targeted for self-hosted app store distribution
-        icon: i-lucide-server
-      - title: Remote signing API
-        description: Controlled API access for automation and agents
-        icon: i-lucide-route
+      - title: Podman or Docker
+        description: Compose file and published images for the bunker and console
+        icon: i-simple-icons-podman
+      - title: Locked-down by default
+        description: Distroless, non-root containers, and a console reachable only behind your TLS proxy
+        icon: i-lucide-lock
+      - title: No open signing port
+        description: The bunker API only accepts requests the console has signed
+        icon: i-lucide-shield-check
 features:
   title: At a glance
   description: What Bancwr brings to organisational Nostr signing.
   items:
     - title: Self-hosted bunker
-      description: Run on your own infrastructure
+      description: The nsec stays on infrastructure you run
       icon: i-lucide-server
-    - title: Team management
-      description: Multiple users, one Nostr identity
+    - title: NIP-46 remote signer
+      description: Works with Nostr apps that support bunker:// connections
+      icon: i-lucide-route
+    - title: Roles
+      description: Administrator, user, and signer access to one identity
       icon: i-lucide-users
-    - title: Audit trails
-      description: Full compliance-oriented signing logs
-      icon: i-lucide-file-text
-    - title: Key recovery
-      description: Business continuity when people or devices change
+    - title: Kind-scoped connections
+      description: Each app signs only the event kinds you allow
       icon: i-lucide-key-round
-    - title: AI agent support
-      description: Controlled signing for automated workflows
-      icon: i-lucide-bot
-    - title: Docker ready
-      description: Umbrel and Start9 deployment targets
-      icon: i-simple-icons-docker
+    - title: Revocation
+      description: Cut off an app or a member without rotating the key
+      icon: i-lucide-power
+    - title: Signing log
+      description: See what was signed recently, by whom, and when
+      icon: i-lucide-file-text
 cta:
   title: Take control of your team's Nostr identity
-  description: Self-host Bancwr and govern who can sign on behalf of your organisation.
+  description: Self-host Bancwr and decide who can sign on behalf of your organisation.
   links:
+    - label: Self-host it
+      to: https://github.com/diogel-io/bancwr#running-the-environment
+      icon: i-lucide-server
+      target: _blank
     - label: View Source
-      to: https://github.com/threenine/bancwr
+      to: https://github.com/diogel-io/bancwr
       icon: i-simple-icons-github
       target: _blank
     - label: Read the Docs
