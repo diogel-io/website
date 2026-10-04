@@ -35,7 +35,7 @@ useHead({ link: [{ rel: 'canonical', href: 'https://diogel.io/porwr' }] })
         v-if="section.image"
         :alt="section.title"
         :src="section.image"
-        class="w-full rounded-lg shadow-xl ring-1 ring-gray-300 dark:ring-gray-700"
+        class="mx-auto max-h-[640px] w-auto max-w-full rounded-lg shadow-xl ring-1 ring-gray-300 dark:ring-gray-700"
       >
     </UPageSection>
 
