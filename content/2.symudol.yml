@@ -21,6 +21,7 @@ sections:
     title: Keys stay on your phone
     description: No copying private keys into random mobile apps. The signer keeps sensitive material isolated on your device.
     orientation: horizontal
+    image: /img/screenshots/symudol/vault.png
     features:
       - title: Device-local vault
         description: Private keys are stored securely on the phone
@@ -35,6 +36,7 @@ sections:
     title: Explicit approval flows
     description: Every signing request is visible and deliberate. You see what's being asked before you approve or reject.
     orientation: horizontal
+    image: /img/screenshots/symudol/approval.png
     reverse: true
     features:
       - title: Clear request UI
@@ -50,6 +52,7 @@ sections:
     title: NIP-55 signer flows
     description: Symudol targets modern NIP-55 signer flows for app-to-signer requests.
     orientation: horizontal
+    image: /img/screenshots/symudol/nip55-request.png
     features:
       - title: get_public_key
         description: Share your public key with requesting apps

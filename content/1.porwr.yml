@@ -28,6 +28,7 @@ sections:
     title: Lives in the side panel
     description: Porwr opens in your browser's side panel, beside the page you are using. Approve a request while you read the page that asked for it. Nothing covers your work, and nothing disappears when you click away.
     orientation: horizontal
+    image: /img/screenshots/porwr/side-panel.png
     features:
       - title: Approve in context
         description: Read the page and the request side by side
@@ -42,6 +43,7 @@ sections:
     title: Full NIP-07 implementation
     description: Porwr implements the standard window.nostr interface, so any Nostr web app can ask it for signatures. Every request shows who is asking, the account it will sign as, and what the event contains, before you approve.
     orientation: horizontal
+    image: /img/screenshots/porwr/nip07-signing-request.png
     reverse: true
     features:
       - title: Event review
@@ -72,8 +74,8 @@ sections:
     title: Privacy focused
     description: No analytics. No tracking. No data collection. No remote lookups during an approval, not even a favicon. Fully open source and auditable. Keys never leave the extension.
     orientation: horizontal
+    image: /img/screenshots/porwr/connected-sites.png
     reverse: true
-    image: /img/screenshots/porwr/privacy-dashboard.png
     features:
       - title: No data collection
         description: Zero analytics or telemetry
