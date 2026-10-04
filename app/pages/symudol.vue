@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('android', () => queryCollection('android').first())
+const { data: page } = await useAsyncData('symudol', () => queryCollection('symudol').first())
 
 const title = page.value?.seo?.title || page.value?.title
 const description = page.value?.seo?.description || page.value?.description
@@ -11,7 +11,7 @@ useSeoMeta({
   ogDescription: description
 })
 
-useHead({ link: [{ rel: 'canonical', href: 'https://diogel.io/android' }] })
+useHead({ link: [{ rel: 'canonical', href: 'https://diogel.io/symudol' }] })
 </script>
 
 <template>

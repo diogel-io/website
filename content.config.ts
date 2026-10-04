@@ -58,8 +58,8 @@ export const collections = {
     type: 'page',
     schema: createPageSchema()
   }),
-  android: defineCollection({
-    source: '2.android.yml',
+  symudol: defineCollection({
+    source: '2.symudol.yml',
     type: 'page',
     schema: createPageSchema()
   }),

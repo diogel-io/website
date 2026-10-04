@@ -5,8 +5,8 @@ const columns = [{
     label: 'Porwr',
     to: '/porwr'
   }, {
-    label: 'Android',
-    to: '/android'
+    label: 'Symudol',
+    to: '/symudol'
   }, {
     label: 'Bancwr',
     to: '/bancwr'
