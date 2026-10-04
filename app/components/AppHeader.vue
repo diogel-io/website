@@ -6,9 +6,9 @@ const items = computed(() => [{
   to: '/porwr',
   active: route.path.startsWith('/porwr')
 }, {
-  label: 'Android',
-  to: '/android',
-  active: route.path.startsWith('/android')
+  label: 'Symudol',
+  to: '/symudol',
+  active: route.path.startsWith('/symudol')
 }, {
   label: 'Bancwr',
   to: '/bancwr',

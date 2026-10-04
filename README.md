@@ -8,7 +8,7 @@ Built with [Nuxt](https://nuxt.com) and [Nuxt UI](https://ui.nuxt.com), hosted o
 
 - **Home** — Landing page at [diogel.io](https://diogel.io)
 - **Porwr** — Browser extension product page
-- **Android** — Android signer app product page
+- **Symudol** — Android signer app product page
 - **Bancwr** — Self-hosted Nostr bunker product page
 - **Docs** — Getting started and reference documentation
 

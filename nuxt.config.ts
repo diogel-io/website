@@ -22,7 +22,8 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/docs': { redirect: '/docs/getting-started', prerender: false }
+    '/docs': { redirect: '/docs/getting-started', prerender: false },
+    '/android': { redirect: { to: '/symudol', statusCode: 301 }, prerender: false }
   },
 
   compatibilityDate: '2024-07-11',

@@ -25,7 +25,7 @@ sections:
         description: Porwr keeps your private keys inside the browser extension. Web apps get signatures, not your key.
         icon: i-lucide-shield-check
       - title: Mobile protection
-        description: Android keeps keys isolated on your phone. Signing requests are reviewed before approval.
+        description: Symudol keeps keys isolated on your Android phone. Signing requests are reviewed before approval.
         icon: i-lucide-smartphone
       - title: Team protection
         description: Bancwr puts governance around shared signing. Team members never see the private key.
@@ -54,7 +54,7 @@ sections:
         description: Porwr implements the standard window.nostr interface. Works with any Nostr web app.
         icon: i-lucide-monitor
       - title: NIP-55 mobile signing
-        description: Android supports modern signer flows for app-to-signer requests on mobile.
+        description: Symudol supports modern Android signer flows for app-to-signer requests on mobile.
         icon: i-lucide-smartphone
       - title: Nostr bunker / remote signing
         description: Bancwr aligns with the Nostr bunker pattern for server-side and team-controlled signing.
@@ -67,10 +67,10 @@ features:
       description: Secure Nostr signing for the browser. Web apps get signatures, not your private key.
       icon: i-lucide-shield
       to: /porwr
-    - title: Android
+    - title: Symudol
       description: Dedicated mobile Nostr signing for Android. Approve app requests while keeping keys on-device.
       icon: i-lucide-smartphone
-      to: /android
+      to: /symudol
     - title: Bancwr
       description: Self-hosted Nostr signing for teams. Shared brand authority without shared private-key chaos.
       icon: i-lucide-building-2

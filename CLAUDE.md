@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 The official marketing/docs website for [Diogel](https://diogel.io), a Nostr key-protection suite. Built with Nuxt 4 + Nuxt UI (Pro components like `UPageHero`, `UPageSection`, `UPageCTA`), Nuxt Content v3, and Tailwind CSS v4. Hosted on Netlify with prerendering.
 
-The site has marketing pages for three products (Porwr, Android signer, Bancwr) plus a docs section, all driven by structured content files rather than hardcoded markup.
+The site has marketing pages for three products (Porwr, Symudol, Bancwr) plus a docs section, all driven by structured content files rather than hardcoded markup.
 
 ## Commands
 
@@ -23,11 +23,11 @@ CI (`.github/workflows/ci.yml`) runs `pnpm install`, `pnpm run lint`, and `pnpm 
 
 ### Content-driven pages
 
-The four product/landing pages (`/`, `/porwr`, `/android`, `/bancwr`) are all data-driven by a shared schema defined in `content.config.ts`:
+The four product/landing pages (`/`, `/porwr`, `/symudol`, `/bancwr`) are all data-driven by a shared schema defined in `content.config.ts`:
 
-- Each page is a YAML file in `content/` (`0.index.yml`, `1.porwr.yml`, `2.android.yml`, `3.bancwr.yml`), validated against `createPageSchema()`.
+- Each page is a YAML file in `content/` (`0.index.yml`, `1.porwr.yml`, `2.symudol.yml`, `3.bancwr.yml`), validated against `createPageSchema()`.
 - The schema shape is: `hero` (links + optional image), `sections[]` (each with id, title, description, orientation, optional reverse/image, and `features[]`), `features` (title/description + `items[]`), and `cta` (title/description + `links[]`).
-- The corresponding Vue page (`app/pages/index.vue`, `porwr.vue`, `android.vue`, `bancwr.vue`) loads its collection via `queryCollection('<name>').first()` and renders the same `UPageHero` / `UPageSection` / `UPageGrid` / `UPageCTA` structure.
+- The corresponding Vue page (`app/pages/index.vue`, `porwr.vue`, `symudol.vue`, `bancwr.vue`) loads its collection via `queryCollection('<name>').first()` and renders the same `UPageHero` / `UPageSection` / `UPageGrid` / `UPageCTA` structure.
 - To change page copy, features, links, or images, edit the YAML content file — not the Vue template. To change layout/structure, the Vue page templates are nearly identical across the four pages, so changes typically need to be mirrored across all of them.
 
 ### Docs
