@@ -42,8 +42,8 @@ sections:
       - title: Explicit approval flows
         description: Every signing request is visible. No invisible side effects, no auto-signing without consent.
         icon: i-lucide-eye
-      - title: Audit trails
-        description: Bancwr provides compliance-oriented audit logs so organisations know exactly what was signed and by whom.
+      - title: Signing log
+        description: Bancwr keeps a log of recent signatures, so administrators can see what was signed, for which member, and when.
         icon: i-lucide-file-text
   - id: standards
     title: Standards-compatible
