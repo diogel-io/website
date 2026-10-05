@@ -31,6 +31,12 @@ for = "/assets/*"
 [headers.values]
 cache-control = "max-age=31536000, immutable"
 
+# Explainer videos (#17): versioned file names, so a new render gets a new name.
+[[headers]]
+for = "/video/*"
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+
 [[headers]]
 for = "/well-known/*"
 [headers.values]

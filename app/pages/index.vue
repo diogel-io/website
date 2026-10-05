@@ -41,8 +41,12 @@ useSeoMeta({
       :reverse="section.reverse || false"
       :features="section.features"
     >
+      <SectionVideo
+        v-if="section.video"
+        v-bind="section.video"
+      />
       <img
-        v-if="section.image"
+        v-else-if="section.image"
         :alt="section.title"
         :src="section.image"
         class="w-full rounded-lg shadow-xl ring-1 ring-gray-300 dark:ring-gray-700"
