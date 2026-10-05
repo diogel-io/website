@@ -20,6 +20,11 @@ sections:
     title: Protect your keys
     description: Private keys should not be casually exported to every client. Diogel keeps signing material inside controlled boundaries and returns signatures instead of raw keys.
     orientation: horizontal
+    video:
+      mp4: /video/home/protect-v1.mp4
+      webm: /video/home/protect-v1.webm
+      poster: /video/home/protect-v1-poster.webp
+      label: "Animation: a private key copied into many apps, then kept inside one Diogel boundary in Porwr, Symudol and Bancwr, with apps receiving signatures instead of the key."
     features:
       - title: Browser protection
         description: Porwr keeps your private keys inside the browser extension. Web apps get signatures, not your key.
@@ -34,7 +39,11 @@ sections:
     title: Signing is a controlled operation
     description: Signing should be a deliberate act, not an invisible side effect. Requests are reviewed, permissioned, scoped, and logged where useful.
     orientation: horizontal
-    reverse: true
+    video:
+      mp4: /video/home/sign-v1.mp4
+      webm: /video/home/sign-v1.webm
+      poster: /video/home/sign-v1-poster.webp
+      label: "Animation: an app asks Diogel for a signature; the request shows the site, account and event; the user approves; a second site must ask separately; permissions are scoped and Bancwr logs signatures."
     features:
       - title: Per-site permissions
         description: Approve or reject signing requests per domain and per event kind. Granular control over what gets signed.
@@ -49,6 +58,11 @@ sections:
     title: Standards-compatible
     description: Diogel fits the Nostr ecosystem — NIP-07 browser signing, NIP-55 mobile signer flows, and Nostr bunker patterns for remote and team-controlled signing.
     orientation: horizontal
+    video:
+      mp4: /video/home/standards-v1.mp4
+      webm: /video/home/standards-v1.webm
+      poster: /video/home/standards-v1-poster.webp
+      label: "Animation: NIP-07 web apps through Porwr, NIP-55 Android apps through Symudol and NIP-46 remote signing through Bancwr, all ending in the same signed Nostr event."
     features:
       - title: NIP-07 browser signing
         description: Porwr implements the standard window.nostr interface. Works with any Nostr web app.

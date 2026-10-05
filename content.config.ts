@@ -30,6 +30,14 @@ const createSectionSchema = () => createBaseSchema().extend({
   orientation: orientationEnum.optional(),
   reverse: z.boolean().optional(),
   image: z.string().optional(),
+  // A silent, looping explainer shown beside the section (#17). Takes the image's place.
+  video: z.object({
+    mp4: z.string().nonempty(),
+    webm: z.string().nonempty(),
+    poster: z.string().nonempty(),
+    // What the video shows, for screen readers.
+    label: z.string().nonempty()
+  }).optional(),
   features: z.array(createFeatureItemSchema())
 })
 
