@@ -8,6 +8,8 @@ defineProps({
   }
 })
 
+useThemeColor()
+
 useHead({
   htmlAttrs: {
     lang: 'en'
