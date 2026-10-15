@@ -25,7 +25,7 @@ hero:
   image:
     src: /img/heroes/bancwr-hero-1200.webp
     srcset: /img/heroes/bancwr-hero-600.webp 600w, /img/heroes/bancwr-hero-1200.webp 1200w
-    alt: Four team members around one Bancwr signing request, three of them approving and one still to answer, with a meter showing three of four approvals reached
+    alt: An administrator issues a single-use connection token, limited to a few event kinds, to one app. The app connects to the Bancwr bunker, which holds the key and returns a signature. Two more team members, a user and a signer, are linked to the bunker by role
     width: 1200
     height: 900
 sections:
