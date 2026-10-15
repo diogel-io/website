@@ -2,7 +2,7 @@ title: Bancwr
 description: A self-hosted Nostr bunker for teams. Bancwr holds your nsec on your own server and signs over NIP-46 for the people and apps you authorise, so nobody else ever handles the key.
 seo:
   title: Bancwr — Self-Hosted Nostr Bunker (NIP-46) for Teams
-  description: Bancwr is a self-hosted NIP-46 Nostr bunker. It keeps one nsec on your server and signs for registered members and kind-scoped app connections, without sharing the private key.
+  description: Bancwr is a self-hosted NIP-46 Nostr bunker. It keeps one nsec on your server and signs for your team and its apps, without sharing the private key.
 hero:
   links:
     - label: Self-host it
