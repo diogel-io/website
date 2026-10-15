@@ -21,7 +21,7 @@ sections:
     title: Keys stay on your phone
     description: No copying private keys into random mobile apps. The signer keeps sensitive material isolated on your device.
     orientation: horizontal
-    image: /img/screenshots/symudol/vault.png
+    image: /img/screenshots/symudol/unlock.png
     features:
       - title: Device-local vault
         description: Private keys are stored securely on the phone
