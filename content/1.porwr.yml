@@ -2,7 +2,7 @@ title: Porwr
 description: A Nostr signer that lives in your browser's side panel. Your keys never leave the extension.
 seo:
   title: Porwr — NIP-07 Nostr Signer for Chrome and Firefox
-  description: Porwr is a privacy-first NIP-07 browser extension for Chrome and Firefox. Web apps ask it for signatures, and your private key never leaves its encrypted vault.
+  description: Porwr is a privacy-first NIP-07 signer for Chrome and Firefox, with private NIP-17 messaging. Your private key never leaves its encrypted vault.
 hero:
   links:
     - label: Install for Chrome
@@ -55,11 +55,27 @@ sections:
       - title: One-click actions
         description: Approve or reject, with the site and account always in view
         icon: i-lucide-check-circle
+  - id: messaging
+    title: Private messaging
+    description: Send and receive end-to-end encrypted Nostr messages from the extension. Porwr uses NIP-17, so relays cannot read your messages or see who you are talking to. Find a contact, start a conversation, and see what is unread at a glance.
+    orientation: horizontal
+    image: /img/screenshots/porwr/messaging.png
+    features:
+      - title: Private by default
+        description: NIP-17 gift-wrapped messages, encrypted with NIP-44
+        icon: i-lucide-mail-check
+      - title: Find contacts fast
+        description: Search your contacts by name, NIP-05, or npub
+        icon: i-lucide-search
+      - title: Support in the app
+        description: Message the Diogel support team privately, without leaving Porwr
+        icon: i-lucide-life-buoy
   - id: key-management
     title: Encrypted key management
     description: Your private keys are stored in an encrypted, password-protected vault that lives inside the browser extension. Keys are only decrypted in memory when the vault is unlocked.
     orientation: horizontal
     image: /img/screenshots/porwr/key-management.png
+    reverse: true
     features:
       - title: AES-GCM encryption
         description: Keys encrypted at rest with password-derived keys
@@ -75,7 +91,6 @@ sections:
     description: No analytics. No tracking. No data collection. No remote lookups during an approval, not even a favicon. Fully open source and auditable. Keys never leave the extension.
     orientation: horizontal
     image: /img/screenshots/porwr/connected-sites.png
-    reverse: true
     features:
       - title: No data collection
         description: Zero analytics or telemetry
@@ -100,8 +115,17 @@ features:
       description: See which sites hold a permission, and revoke any of them
       icon: i-lucide-key-round
     - title: Relays and wallets
-      description: Manage relays and Nostr Wallet Connect (NWC) wallet connections
+      description: Manage relays, and connect Lightning wallets with Nostr Wallet Connect (NWC)
       icon: i-lucide-radio-tower
+    - title: Zaps through WebLN
+      description: Zap from Nostr web clients, with your approval for every payment
+      icon: i-lucide-zap
+    - title: Media Management
+      description: Choose your own Blossom server for profile image uploads
+      icon: i-lucide-image
+    - title: Private messaging
+      description: End-to-end encrypted NIP-17 messages with your contacts
+      icon: i-lucide-messages-square
     - title: Auto-lock vault
       description: Configurable timeout keeps your keys safe
       icon: i-lucide-timer
