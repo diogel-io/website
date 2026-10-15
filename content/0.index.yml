@@ -49,7 +49,7 @@ sections:
         description: Approve or reject signing requests per domain and per event kind. Granular control over what gets signed.
         icon: i-lucide-lock
       - title: Explicit approval flows
-        description: Every signing request is visible. No invisible side effects, no auto-signing without consent.
+        description: 'Nothing is signed without an approval: yours for each request, or a permission you gave that site or app and can revoke at any time.'
         icon: i-lucide-eye
       - title: Signing log
         description: Bancwr keeps a log of recent signatures, so administrators can see what was signed, for which member, and when.
