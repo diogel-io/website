@@ -21,7 +21,20 @@ useHead({ link: [{ rel: 'canonical', href: 'https://diogel.io/bancwr' }] })
       :title="page.title"
       :description="page.description"
       :links="page.hero.links"
-    />
+      orientation="horizontal"
+    >
+      <img
+        v-if="page.hero.image"
+        :src="page.hero.image.src"
+        :srcset="page.hero.image.srcset"
+        sizes="(min-width: 1024px) 50vw, 100vw"
+        :width="page.hero.image.width"
+        :height="page.hero.image.height"
+        :alt="page.hero.image.alt"
+        fetchpriority="high"
+        class="h-auto w-full"
+      >
+    </UPageHero>
 
     <UPageSection
       v-for="(section, index) in page.sections"

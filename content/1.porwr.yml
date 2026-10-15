@@ -23,6 +23,12 @@ hero:
       color: neutral
       variant: outline
       target: _blank
+  image:
+    src: /img/heroes/porwr-hero-1200.webp
+    srcset: /img/heroes/porwr-hero-600.webp 600w, /img/heroes/porwr-hero-1200.webp 1200w
+    alt: A browser window with a Nostr web page on the left and the Porwr side panel open on the right, showing a sign request with the requesting site, the signing account and an orange approve button
+    width: 1200
+    height: 900
 sections:
   - id: side-panel
     title: Lives in the side panel

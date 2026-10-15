@@ -44,7 +44,15 @@ const createSectionSchema = () => createBaseSchema().extend({
 const createPageSchema = () => z.object({
   hero: z.object({
     links: z.array(createLinkSchema()),
-    image: z.string().optional()
+    // A product illustration beside the hero text (#71), served as WebP in two widths.
+    image: z.object({
+      src: z.string().nonempty(),
+      srcset: z.string().nonempty(),
+      // What the picture shows, for screen readers.
+      alt: z.string().nonempty(),
+      width: z.number().int().positive(),
+      height: z.number().int().positive()
+    }).optional()
   }),
   sections: z.array(createSectionSchema()),
   features: createBaseSchema().extend({
