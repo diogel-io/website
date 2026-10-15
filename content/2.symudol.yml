@@ -34,7 +34,7 @@ sections:
         icon: i-lucide-crosshair
   - id: approval
     title: Explicit approval flows
-    description: Every signing request is visible and deliberate. You see what's being asked before you approve or reject.
+    description: You see who is asking and what they want before you approve or reject. Symudol only skips the question when you have already remembered a decision for that app and that kind of request.
     orientation: horizontal
     image: /img/screenshots/symudol/approval.png
     reverse: true
@@ -43,10 +43,10 @@ sections:
         description: Signing requests presented with full context
         icon: i-lucide-eye
       - title: Approve or reject
-        description: Every request requires your explicit decision
+        description: You decide, unless you have remembered a decision for that request
         icon: i-lucide-hand
       - title: Remembered permissions
-        description: Remember approvals for trusted apps when appropriate
+        description: Remember a decision for one app and one kind of request, and revoke it in Trusted Nostr apps
         icon: i-lucide-check-circle
   - id: nip55
     title: NIP-55 signer flows
@@ -77,7 +77,7 @@ features:
       description: Switch between Nostr accounts cleanly
       icon: i-lucide-user-circle
     - title: Explicit approvals
-      description: No invisible signing, every request reviewed
+      description: Nothing is signed without your approval or a decision you remembered
       icon: i-lucide-hand
     - title: Intent flows
       description: Android intent and ContentResolver signing patterns
