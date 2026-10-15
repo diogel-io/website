@@ -1,18 +1,12 @@
 <script setup lang="ts">
 const { data: page } = await useAsyncData('porwr', () => queryCollection('porwr').first())
 
-const title = page.value?.seo?.title || page.value?.title
-const description = page.value?.seo?.description || page.value?.description
+const title = page.value?.seo?.title || page.value?.title || ''
+const description = page.value?.seo?.description || page.value?.description || ''
 
-useSeoMeta({
-  titleTemplate: '',
-  title,
-  ogTitle: title,
-  description,
-  ogDescription: description
-})
-
-useHead({ link: [{ rel: 'canonical', href: 'https://diogel.io/porwr' }] })
+useSeoMeta({ titleTemplate: '' })
+usePageSeo({ title, description, path: '/porwr' })
+useSoftwareApplicationJsonLd({ name: 'Porwr', description, path: '/porwr', operatingSystem: 'Chrome, Firefox' })
 </script>
 
 <template>

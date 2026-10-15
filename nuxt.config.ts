@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/ui',
     '@nuxt/content',
+    '@nuxtjs/sitemap',
     '@threenine/nuxt-fathom',
     '@vueuse/nuxt'
   ],
@@ -14,6 +15,11 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/main.css'],
+
+  site: {
+    url: 'https://diogel.io',
+    name: 'Diogel'
+  },
 
   content: {
     experimental: {
@@ -30,8 +36,12 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
+      // Write /porwr as porwr.html, not porwr/index.html, so Netlify serves /porwr directly
+      // instead of redirecting to /porwr/ (#73). Canonical URLs have no trailing slash.
+      autoSubfolderIndex: false,
       routes: [
-        '/'
+        '/',
+        '/sitemap.xml'
       ],
       crawlLinks: true
     }
@@ -50,7 +60,14 @@ export default defineNuxtConfig({
       }
     }
   },
+
   fathom: {
     siteId: process.env.fathom_analytics_id
+  },
+
+  // Built at prerender time from the crawled routes (#73). The redirects are not pages.
+  sitemap: {
+    zeroRuntime: true,
+    exclude: ['/docs', '/android']
   }
 })

@@ -16,17 +16,15 @@ const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
   })
 })
 
-const title = page.value.seo?.title || page.value.title
+// Docs pages share titles across products ("Installation"), so product pages name the product.
+const DOCS_SECTIONS: Record<string, string> = { porwr: 'Porwr', symudol: 'Symudol', bancwr: 'Bancwr' }
+const section = DOCS_SECTIONS[route.path.split('/')[2] || '']
+
+const pageTitle = page.value.seo?.title || page.value.title
+const title = section && !pageTitle.includes(section) ? `${pageTitle} - ${section}` : pageTitle
 const description = page.value.seo?.description || page.value.description
 
-useSeoMeta({
-  title,
-  ogTitle: title,
-  description,
-  ogDescription: description
-})
-
-useHead({ link: [{ rel: 'canonical', href: `https://diogel.io${route.path}` }] })
+usePageSeo({ title, description, path: route.path, type: 'article' })
 </script>
 
 <template>
