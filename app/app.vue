@@ -50,6 +50,8 @@ provide('navigation', navigation)
         :navigation="navigation"
         :links="links"
         :fuse="{ resultLimit: 42 }"
+        title="Search the docs"
+        description="Search Diogel's documentation"
       />
     </ClientOnly>
   </UApp>
