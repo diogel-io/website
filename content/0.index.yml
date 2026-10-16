@@ -4,6 +4,10 @@ seo:
   title: Diogel — Nostr Key Protection Suite
   description: Protect your Nostr private keys across browser, mobile, and team environments. Sign safely without exposing your keys.
 hero:
+  video:
+    mp4: /video/home/hero-v1.mp4
+    webm: /video/home/hero-v1.webm
+    poster: /video/home/hero-v1-poster.webp
   links:
     - label: Get Started
       to: /docs/getting-started
