@@ -11,13 +11,19 @@ useJsonLd(ORGANIZATION)
 
 <template>
   <div v-if="page">
+    <!-- The hero is dark in both colour modes, because its background video is (workspace#91). -->
     <UPageHero
       :title="page.title"
       :description="page.description"
       :links="page.hero.links"
+      orientation="horizontal"
+      class="dark"
     >
       <template #top>
-        <HeroBackground />
+        <HeroVideo
+          v-if="page.hero.video"
+          v-bind="page.hero.video"
+        />
       </template>
 
       <template #title>

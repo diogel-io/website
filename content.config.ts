@@ -52,6 +52,12 @@ const createPageSchema = () => z.object({
       alt: z.string().nonempty(),
       width: z.number().int().positive(),
       height: z.number().int().positive()
+    }).optional(),
+    // A silent, looping background behind the hero copy (workspace#91). Decorative, so no label.
+    video: z.object({
+      mp4: z.string().nonempty(),
+      webm: z.string().nonempty(),
+      poster: z.string().nonempty()
     }).optional()
   }),
   sections: z.array(createSectionSchema()),
