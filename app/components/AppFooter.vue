@@ -48,7 +48,7 @@ const columns = [{
 
     <template #right>
       <UButton
-        to="https://github.com/threenine"
+        to="https://github.com/diogel-io"
         target="_blank"
         icon="i-simple-icons-github"
         aria-label="Threenine on GitHub"
