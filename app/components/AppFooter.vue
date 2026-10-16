@@ -18,7 +18,7 @@ const columns = [{
     to: '/docs'
   }, {
     label: 'GitHub',
-    to: 'https://github.com/threenine'
+    to: 'https://github.com/diogel-io'
   }]
 }]
 </script>
