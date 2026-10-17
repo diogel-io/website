@@ -43,6 +43,8 @@ const createSectionSchema = () => createBaseSchema().extend({
 
 const createPageSchema = () => z.object({
   hero: z.object({
+    // A short label above the hero title, such as the product name when the title is a benefit (workspace#101).
+    headline: z.string().optional(),
     links: z.array(createLinkSchema()),
     // A product illustration beside the hero text (#71), served as WebP in two widths.
     image: z.object({

@@ -12,6 +12,7 @@ useSoftwareApplicationJsonLd({ name: 'Porwr', description, path: '/porwr', opera
 <template>
   <div v-if="page">
     <UPageHero
+      :headline="page.hero.headline"
       :title="page.title"
       :description="page.description"
       :links="page.hero.links"
