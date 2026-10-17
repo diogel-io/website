@@ -12,6 +12,7 @@ useSoftwareApplicationJsonLd({ name: 'Symudol', description, path: '/symudol', o
 <template>
   <div v-if="page">
     <UPageHero
+      :headline="page.hero.headline"
       :title="page.title"
       :description="page.description"
       :links="page.hero.links"

@@ -1,9 +1,10 @@
-title: Bancwr
-description: A self-hosted Nostr bunker for teams. Bancwr holds your nsec on your own server and signs over NIP-46 for the people and apps you authorise, so nobody else ever handles the key.
+title: Keep your brand's identity under your control, on a server you run.
+description: Bancwr lets your team post as one Nostr identity without handing it to anyone. It runs on your own server, so no vendor, Diogel included, holds it. You decide who can act for the brand, and every signature is logged.
 seo:
   title: Bancwr — Self-Hosted Nostr Bunker (NIP-46) for Teams
   description: Bancwr is a self-hosted NIP-46 Nostr bunker. It keeps one nsec on your server and signs for your team and its apps, without sharing the private key.
 hero:
+  headline: Bancwr
   links:
     - label: Self-host it
       to: https://github.com/diogel-io/bancwr#running-the-environment
