@@ -51,7 +51,7 @@ Each content YAML can define an optional `seo.title` / `seo.description`, which 
 
 - `@nuxt/content` (with native sqlite connector) for the YAML/markdown collections described above.
 - `@nuxt/ui` (v4, Pro components) for all page-level UI primitives.
-- `@nuxt/image` and `nuxt-og-image` for images and OG image generation.
+- `@nuxt/image` for images. Share images are static 1200×630 PNGs in `public/img/og/`, set by `usePageSeo` (no OG image generation).
 - `@threenine/nuxt-fathom` for Fathom Analytics, configured via `fathom.siteId` from the `fathom_analytics_id` env var.
 - `@vueuse/nuxt` and `@nuxt/eslint`.
 

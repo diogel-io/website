@@ -40,7 +40,7 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/docs': { redirect: '/docs/getting-started', prerender: false },
+    '/docs': { redirect: { to: '/docs/getting-started', statusCode: 301 }, prerender: false },
     '/android': { redirect: { to: '/symudol', statusCode: 301 }, prerender: false }
   },
 
