@@ -26,10 +26,12 @@ for = "/manifest.webmanifest"
 [headers.values]
 Content-Type = "application/manifest+json"
 
+# Images (#168): names are not versioned, so cache for a day rather than as immutable.
+# Netlify clears its own CDN cache on each deploy; this only sets how long browsers keep them.
 [[headers]]
-for = "/assets/*"
+for = "/img/*"
 [headers.values]
-cache-control = "max-age=31536000, immutable"
+cache-control = "public, max-age=86400"
 
 # Explainer videos (#17): versioned file names, so a new render gets a new name.
 [[headers]]
