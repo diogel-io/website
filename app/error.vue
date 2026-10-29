@@ -16,10 +16,13 @@ useHead({
   }
 })
 
+// noindex (#164): the 404 status already keeps this out of search, and this also covers errors
+// rendered in the browser, which have no status.
 useSeoMeta({
   titleTemplate: '%s - Diogel',
   title: 'Page not found',
-  description: 'We are sorry but this page could not be found.'
+  description: 'We are sorry but this page could not be found.',
+  robots: 'noindex'
 })
 
 const { data: navigation } = await useAsyncData('navigation', () => queryCollectionNavigation('docs'), {
