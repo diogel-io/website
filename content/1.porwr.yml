@@ -35,7 +35,10 @@ sections:
     title: Lives in the side panel
     description: Porwr opens in your browser's side panel, beside the page you are using. Approve a request while you read the page that asked for it. Nothing covers your work, and nothing disappears when you click away.
     orientation: horizontal
-    image: /img/screenshots/porwr/side-panel.png
+    image:
+      src: /img/screenshots/porwr/side-panel.png
+      width: 840
+      height: 1720
     features:
       - title: Approve in context
         description: Read the page and the request side by side
@@ -50,7 +53,10 @@ sections:
     title: Full NIP-07 implementation
     description: Porwr implements the standard window.nostr interface, so any Nostr web app can ask it for signatures. Every request shows who is asking, the account it will sign as, and what the event contains, before you approve.
     orientation: horizontal
-    image: /img/screenshots/porwr/nip07-signing-request.png
+    image:
+      src: /img/screenshots/porwr/nip07-signing-request.png
+      width: 840
+      height: 1720
     reverse: true
     features:
       - title: Event review
@@ -66,7 +72,10 @@ sections:
     title: Private messaging
     description: Send and receive end-to-end encrypted Nostr messages from the extension. Porwr uses NIP-17, so relays cannot read your messages or see who you are talking to. Find a contact, start a conversation, and see what is unread at a glance.
     orientation: horizontal
-    image: /img/screenshots/porwr/messaging.png
+    image:
+      src: /img/screenshots/porwr/messaging.png
+      width: 1600
+      height: 1000
     features:
       - title: Private by default
         description: NIP-17 gift-wrapped messages, encrypted with NIP-44
@@ -81,7 +90,10 @@ sections:
     title: Encrypted key management
     description: Your private keys are stored in an encrypted, password-protected vault that lives inside the browser extension. Keys are only decrypted in memory when the vault is unlocked.
     orientation: horizontal
-    image: /img/screenshots/porwr/key-management.png
+    image:
+      src: /img/screenshots/porwr/key-management.png
+      width: 1600
+      height: 1000
     reverse: true
     features:
       - title: AES-GCM encryption
@@ -97,7 +109,10 @@ sections:
     title: Privacy focused
     description: No analytics. No tracking. No data collection. No remote lookups during an approval, not even a favicon. Fully open source and auditable. Keys never leave the extension.
     orientation: horizontal
-    image: /img/screenshots/porwr/connected-sites.png
+    image:
+      src: /img/screenshots/porwr/connected-sites.png
+      width: 1600
+      height: 1000
     features:
       - title: No data collection
         description: Zero analytics or telemetry

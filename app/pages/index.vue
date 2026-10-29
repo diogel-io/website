@@ -47,12 +47,12 @@ useJsonLd(ORGANIZATION)
         v-if="section.video"
         v-bind="section.video"
       />
-      <img
+      <SectionImage
         v-else-if="section.image"
+        v-bind="section.image"
         :alt="section.title"
-        :src="section.image"
         class="w-full rounded-lg shadow-xl ring-1 ring-gray-300 dark:ring-gray-700"
-      >
+      />
     </UPageSection>
 
     <UPageSection

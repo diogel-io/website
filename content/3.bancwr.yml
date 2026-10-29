@@ -34,7 +34,10 @@ sections:
     title: Shared signing authority, no shared key
     description: One Nostr identity, many members. Bancwr keeps the nsec on your server and your team works through it. Members sign in to the web console with a NIP-07 extension or a NIP-46 bunker:// string, and Bancwr never asks anyone for a private key.
     orientation: horizontal
-    image: /img/screenshots/bancwr/team.png
+    image:
+      src: /img/screenshots/bancwr/team.png
+      width: 1600
+      height: 1000
     features:
       - title: Brand accounts
         description: One Nostr identity, multiple registered members
@@ -49,7 +52,10 @@ sections:
     title: Controlled app connections over NIP-46
     description: Nostr apps use Bancwr as a remote signer, but only once an administrator lets them. Each connection starts from a single-use token issued for a named member and limited to the event kinds you list. There is no "sign everything" grant.
     orientation: horizontal
-    image: /img/screenshots/bancwr/connections.png
+    image:
+      src: /img/screenshots/bancwr/connections.png
+      width: 1600
+      height: 1000
     reverse: true
     features:
       - title: Kind-scoped tokens
@@ -65,7 +71,10 @@ sections:
     title: Your server, your key
     description: Run Bancwr with Podman or Docker Compose from versioned images on GitHub Container Registry. Signing happens over NIP-46 only. The HTTP API behind the web console manages the bunker and never signs.
     orientation: horizontal
-    image: /img/screenshots/bancwr/status.png
+    image:
+      src: /img/screenshots/bancwr/status.png
+      width: 1600
+      height: 1000
     features:
       - title: Podman or Docker
         description: Compose file and published images for the bunker and console

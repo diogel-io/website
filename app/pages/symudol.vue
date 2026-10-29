@@ -40,12 +40,12 @@ useSoftwareApplicationJsonLd({ name: 'Symudol', description, path: '/symudol', o
       :reverse="section.reverse || false"
       :features="section.features"
     >
-      <img
+      <SectionImage
         v-if="section.image"
+        v-bind="section.image"
         :alt="section.title"
-        :src="section.image"
         class="mx-auto max-h-[640px] w-auto max-w-full rounded-lg shadow-xl ring-1 ring-gray-300 dark:ring-gray-700"
-      >
+      />
     </UPageSection>
 
     <UPageSection
