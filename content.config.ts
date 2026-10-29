@@ -29,7 +29,12 @@ const createSectionSchema = () => createBaseSchema().extend({
   id: z.string().nonempty(),
   orientation: orientationEnum.optional(),
   reverse: z.boolean().optional(),
-  image: z.string().optional(),
+  // A screenshot beside the section (#166), with its pixel size so the page can reserve the space.
+  image: z.object({
+    src: z.string().nonempty(),
+    width: z.number().int().positive(),
+    height: z.number().int().positive()
+  }).optional(),
   // A silent, looping explainer shown beside the section (#17). Takes the image's place.
   video: z.object({
     mp4: z.string().nonempty(),
