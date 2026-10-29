@@ -6,7 +6,8 @@ const description = page.value?.seo?.description || page.value?.description || '
 
 useSeoMeta({ titleTemplate: '' })
 usePageSeo({ title, description, path: '/' })
-useJsonLd(ORGANIZATION)
+// One block (#165), so the WebSite's publisher reference resolves to the Organization beside it.
+useJsonLd({ '@graph': [ORGANIZATION, WEBSITE] })
 </script>
 
 <template>

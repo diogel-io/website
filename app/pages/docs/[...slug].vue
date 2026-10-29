@@ -25,6 +25,15 @@ const title = section && !pageTitle.includes(section) ? `${pageTitle} - ${sectio
 const description = page.value.seo?.description || page.value.description
 
 usePageSeo({ title, description, path: route.path, type: 'article' })
+
+// Breadcrumbs (#165): Docs › product › page. "Docs" is /docs/getting-started, where /docs redirects,
+// so a Getting Started page sits directly under it and the Getting Started page itself has no trail.
+const [, sectionSlug = '', ...pageSlugs] = route.path.split('/').filter(Boolean)
+const DOCS_HOME = '/docs/getting-started'
+const crumbs = [{ name: 'Docs', path: DOCS_HOME }]
+if (section) crumbs.push({ name: section, path: `/docs/${sectionSlug}` })
+if (pageSlugs.length) crumbs.push({ name: pageTitle, path: route.path })
+if (crumbs.length > 1) useBreadcrumbJsonLd(crumbs)
 </script>
 
 <template>

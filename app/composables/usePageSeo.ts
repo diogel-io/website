@@ -45,9 +45,11 @@ export const usePageSeo = (options: {
     ogImageWidth: 1200,
     ogImageHeight: 630,
     ogImageAlt: options.title,
+    ogLocale: 'en_GB',
     twitterTitle: options.title,
     twitterDescription: options.description,
-    twitterImage: image
+    twitterImage: image,
+    twitterImageAlt: options.title
   })
 
   useHead({ link: [{ rel: 'canonical', href: url }] })
@@ -68,6 +70,27 @@ export const ORGANIZATION = {
   'logo': `${SITE_URL}/img/logo/diogel-mark-512.png`,
   'sameAs': ['https://github.com/diogel-io']
 }
+
+/** The site itself (#165), for the home page. No SearchAction: the docs search runs in the browser only. */
+export const WEBSITE = {
+  '@type': 'WebSite',
+  '@id': `${SITE_URL}/#website`,
+  'name': SITE_NAME,
+  'url': SITE_URL,
+  'inLanguage': 'en-GB',
+  'publisher': { '@id': ORGANIZATION['@id'] }
+}
+
+/** BreadcrumbList JSON-LD (#165), each item linking to the page's canonical URL. */
+export const useBreadcrumbJsonLd = (items: { name: string, path: string }[]) => useJsonLd({
+  '@type': 'BreadcrumbList',
+  'itemListElement': items.map((item, index) => ({
+    '@type': 'ListItem',
+    'position': index + 1,
+    'name': item.name,
+    'item': absoluteUrl(item.path)
+  }))
+})
 
 /** SoftwareApplication JSON-LD for a product page. No offers or ratings: none are published yet. */
 export const useSoftwareApplicationJsonLd = (options: {
