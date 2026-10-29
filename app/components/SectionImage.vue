@@ -17,6 +17,13 @@ const shownWidth = computed(() => {
   return Math.round(Math.min(capped, props.width))
 })
 const sizes = computed(() => `${shownWidth.value}px`)
+
+// A definite width, so the width and height attributes reserve the image's space before it loads.
+// Without one, the product pages' `w-auto` leaves a lazy image 0×0 until it arrives. Tall
+// screenshots take their shown width, and wide ones fill the column, as they already did.
+const style = computed(() => ({
+  width: props.height > props.width ? `${shownWidth.value}px` : '100%'
+}))
 </script>
 
 <template>
@@ -26,6 +33,7 @@ const sizes = computed(() => `${shownWidth.value}px`)
     :height="props.height"
     :alt="props.alt"
     :sizes="sizes"
+    :style="style"
     format="webp"
     loading="lazy"
     decoding="async"
