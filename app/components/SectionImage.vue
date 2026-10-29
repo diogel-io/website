@@ -8,21 +8,24 @@ const props = defineProps<{
   alt: string
 }>()
 
-// The widest it is shown, in CSS pixels: sections cap images at about 640px wide, and the product
-// pages cap tall screenshots at 640px high. Never more than the file's own width. NuxtImg serves
-// this width and twice it, and twice it is still within the file, so no variant is upscaled.
+// The widest it is shown beside the section text, in CSS pixels: about 640px wide, or for a tall
+// screenshot the width at the product pages' 640px height cap. Never more than the file's own width.
 const MAX_SIDE = 640
+const isTall = computed(() => props.height > props.width)
 const shownWidth = computed(() => {
-  const capped = props.height > props.width ? (MAX_SIDE * props.width) / props.height : MAX_SIDE
+  const capped = isTall.value ? (MAX_SIDE * props.width) / props.height : MAX_SIDE
   return Math.round(Math.min(capped, props.width))
 })
-const sizes = computed(() => `${shownWidth.value}px`)
+// Tall screenshots are shown at the same width at every screen size. Wide ones fill the single
+// column below lg, then share the row at about 640px. NuxtImg applies each size from its screen
+// up to the next one, so this reads "(max-width: 1024px) 100vw, 640px".
+const sizes = computed(() => isTall.value ? `${shownWidth.value}px` : `md:100vw lg:${MAX_SIDE}px`)
 
 // A definite width, so the width and height attributes reserve the image's space before it loads.
 // Without one, the product pages' `w-auto` leaves a lazy image 0×0 until it arrives. Tall
 // screenshots take their shown width, and wide ones fill the column, as they already did.
 const style = computed(() => ({
-  width: props.height > props.width ? `${shownWidth.value}px` : '100%'
+  width: isTall.value ? `${shownWidth.value}px` : '100%'
 }))
 </script>
 
