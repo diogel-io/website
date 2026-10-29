@@ -1,21 +1,23 @@
-title: Symudol
-description: Dedicated mobile Nostr signing for Android. Symudol lets you approve app requests while keeping keys on-device.
+title: Carry your identity on your phone, under your control.
+description: Symudol keeps your Nostr identity on your mobile, so the apps you use never hold it. When an app wants to post as you, it asks Symudol, and you decide. Symudol runs on Android.
 seo:
   title: Symudol — Mobile Nostr Signer for Android
   description: Symudol is a dedicated Android Nostr signer that keeps private keys device-local and presents signing requests clearly.
 hero:
+  headline: Symudol
   links:
-    - label: Coming Soon
-      to: /symudol
-      icon: i-lucide-clock
-      color: neutral
-      variant: outline
     - label: View Source
       to: https://github.com/diogel-io/symudol
       icon: i-simple-icons-github
       color: neutral
       variant: outline
       target: _blank
+  image:
+    src: /img/heroes/symudol-hero-1200.webp
+    srcset: /img/heroes/symudol-hero-600.webp 600w, /img/heroes/symudol-hero-1200.webp 1200w
+    alt: A phone lock screen with the Diogel mark, the account, a fingerprint and a PIN, unlocking the identity that Symudol keeps on the device
+    width: 1200
+    height: 900
 sections:
   - id: mobile-protection
     title: Keys stay on your phone

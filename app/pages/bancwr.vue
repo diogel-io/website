@@ -1,27 +1,35 @@
 <script setup lang="ts">
 const { data: page } = await useAsyncData('bancwr', () => queryCollection('bancwr').first())
 
-const title = page.value?.seo?.title || page.value?.title
-const description = page.value?.seo?.description || page.value?.description
+const title = page.value?.seo?.title || page.value?.title || ''
+const description = page.value?.seo?.description || page.value?.description || ''
 
-useSeoMeta({
-  titleTemplate: '',
-  title,
-  ogTitle: title,
-  description,
-  ogDescription: description
-})
-
-useHead({ link: [{ rel: 'canonical', href: 'https://diogel.io/bancwr' }] })
+useSeoMeta({ titleTemplate: '' })
+usePageSeo({ title, description, path: '/bancwr' })
+useSoftwareApplicationJsonLd({ name: 'Bancwr', description, path: '/bancwr', operatingSystem: 'Linux (container)' })
 </script>
 
 <template>
   <div v-if="page">
     <UPageHero
+      :headline="page.hero.headline"
       :title="page.title"
       :description="page.description"
       :links="page.hero.links"
-    />
+      orientation="horizontal"
+    >
+      <img
+        v-if="page.hero.image"
+        :src="page.hero.image.src"
+        :srcset="page.hero.image.srcset"
+        sizes="(min-width: 1024px) 50vw, 100vw"
+        :width="page.hero.image.width"
+        :height="page.hero.image.height"
+        :alt="page.hero.image.alt"
+        fetchpriority="high"
+        class="h-auto w-full"
+      >
+    </UPageHero>
 
     <UPageSection
       v-for="(section, index) in page.sections"

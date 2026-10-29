@@ -1,9 +1,10 @@
-title: Porwr
-description: A Nostr signer that lives in your browser's side panel. Your keys never leave the extension.
+title: Use any Nostr web app without handing over your identity.
+description: Porwr keeps your Nostr identity in your browser, under your control. Apps ask before they act as you, and you approve each request beside the page that asked. Available for Chrome and Firefox.
 seo:
   title: Porwr — NIP-07 Nostr Signer for Chrome and Firefox
   description: Porwr is a privacy-first NIP-07 signer for Chrome and Firefox, with private NIP-17 messaging. Your private key never leaves its encrypted vault.
 hero:
+  headline: Porwr
   links:
     - label: Install for Chrome
       to: https://chromewebstore.google.com/detail/diogel/inhkmeiabnknligdjngmoocohdonoboa
@@ -23,6 +24,12 @@ hero:
       color: neutral
       variant: outline
       target: _blank
+  image:
+    src: /img/heroes/porwr-hero-1200.webp
+    srcset: /img/heroes/porwr-hero-600.webp 600w, /img/heroes/porwr-hero-1200.webp 1200w
+    alt: A browser window with a Nostr web page on the left and the Porwr side panel open on the right, showing a sign request with the requesting site, the signing account and an orange approve button
+    width: 1200
+    height: 900
 sections:
   - id: side-panel
     title: Lives in the side panel

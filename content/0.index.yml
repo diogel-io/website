@@ -1,9 +1,13 @@
-title: Nostr signing without private-key sprawl
-description: Diogel protects Nostr keys, secures signing authority, and lets people, apps, teams, and agents sign safely without taking custody of the private key.
+title: Your identity. Your voice. No one's permission.
+description: "Diogel keeps your Nostr identity in your hands: in your browser, on your mobile, or on a server you run. No single app can take it from you, and Diogel never holds it either."
 seo:
-  title: Diogel — Nostr Key Protection Suite
-  description: Protect your Nostr private keys across browser, mobile, and team environments. Sign safely without exposing your keys.
+  title: Diogel — Own your online identity on Nostr
+  description: Your identity. Your voice. No one's permission. Diogel keeps your Nostr identity in your hands, so no single app can take it from you.
 hero:
+  video:
+    mp4: /video/home/hero-v1.mp4
+    webm: /video/home/hero-v1.webm
+    poster: /video/home/hero-v1-poster.webp
   links:
     - label: Get Started
       to: /docs/getting-started
@@ -16,9 +20,29 @@ hero:
       variant: outline
       target: _blank
 sections:
+  - id: pillars
+    title: Your identity, on your terms
+    description: On Nostr, no platform owns your name, your followers or your posts. Diogel keeps your identity safe, so it stays that way.
+    orientation: vertical
+    features:
+      - title: An identity no company can switch off
+        description: Your Nostr identity isn't an account a company lends you, so no company can switch it off.
+        icon: i-lucide-megaphone
+      - title: Take your audience with you
+        description: If one app shuts you out, open another and keep your name and your followers.
+        icon: i-lucide-door-open
+      - title: Own what you publish
+        description: Everything you post is signed by you, so it's provably yours.
+        icon: i-lucide-badge-check
+      - title: No middleman
+        description: Your identity stays with you. Not with an app, and not with us.
+        icon: i-lucide-user-check
+      - title: Only you post as you
+        description: Keep your identity out of the apps you try, so none of them can post as you without your permission.
+        icon: i-lucide-fingerprint
   - id: protect
-    title: Protect your keys
-    description: Private keys should not be casually exported to every client. Diogel keeps signing material inside controlled boundaries and returns signatures instead of raw keys.
+    title: How it works
+    description: Apps ask Diogel to sign for you. They get a signature, never your key, so none of them holds your identity.
     orientation: horizontal
     video:
       mp4: /video/home/protect-v1.mp4
@@ -75,23 +99,23 @@ sections:
         icon: i-lucide-server
 features:
   title: One suite, three products
-  description: The Diogel suite solves the same problem at three levels — personal browser signing, mobile signing, and organisational key custody.
+  description: "Three products, one promise: your identity stays yours, wherever you use Nostr."
   items:
     - title: Porwr
-      description: Secure Nostr signing for the browser. Web apps get signatures, not your private key.
+      description: Use any Nostr web app without handing over your identity.
       icon: i-lucide-shield
       to: /porwr
     - title: Symudol
-      description: Dedicated mobile Nostr signing for Android. Approve app requests while keeping keys on-device.
+      description: Carry your Nostr identity on your phone, under your control.
       icon: i-lucide-smartphone
       to: /symudol
     - title: Bancwr
-      description: Self-hosted Nostr signing for teams. Shared brand authority without shared private-key chaos.
+      description: Keep your brand's Nostr identity under your control, on a server you run.
       icon: i-lucide-building-2
       to: /bancwr
 cta:
-  title: Ready to protect your Nostr keys?
-  description: Get started with Diogel and keep your private keys where they belong — protected.
+  title: Ready to own your Nostr identity?
+  description: "Pick where you use Nostr: Porwr in your browser, Symudol on your mobile, or Bancwr on your own server."
   links:
     - label: Get Started
       to: /docs/getting-started
