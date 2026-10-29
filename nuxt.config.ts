@@ -14,6 +14,18 @@ export default defineNuxtConfig({
     enabled: true
   },
 
+  // Icons and the manifest go here, not in app.vue, so error.vue's 404 page links them too (#167).
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', href: '/favicon.ico', sizes: '32x32' },
+        { rel: 'icon', href: '/icon.svg', type: 'image/svg+xml' },
+        { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
+        { rel: 'manifest', href: '/manifest.webmanifest' }
+      ]
+    }
+  },
+
   css: ['~/assets/css/main.css'],
 
   site: {
