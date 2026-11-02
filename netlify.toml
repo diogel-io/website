@@ -40,9 +40,18 @@ for = "/video/*"
 cache-control = "public, max-age=31536000, immutable"
 
 [[headers]]
-for = "/well-known/*"
-[headers.values]
-Access-Control = "Access-Control-Allow-Origin: *"
+  for = "/well-known/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "GET, OPTIONS"
+    Access-Control-Allow-Headers = "Content-Type"
+
+[[headers]]
+  for = "/.well-known/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "GET, OPTIONS"
+    Access-Control-Allow-Headers = "Content-Type"
 
 [context.branch-deploy]
 command = "NODE_OPTIONS=\"--max-old-space-size=8192\" pnpm run build"

@@ -1,0 +1,4 @@
+# The only place for redirects. Don't add redirect routeRules in nuxt.config.ts: Nitro would
+# append unforced copies of them here, and prerender stub pages for them.
+https://diogel.netlify.app/*  https://diogel.io/:splat  301!
+/.well-known/*  /well-known/:splat 200!

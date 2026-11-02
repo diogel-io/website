@@ -1,0 +1,11 @@
+{
+  "names": {
+    "support": "62afd86213c15b085f78c731bc440d2a8867fc95297cd65c0d70d42d98b55222",
+  },
+  "relays": {
+    "62afd86213c15b085f78c731bc440d2a8867fc95297cd65c0d70d42d98b55222": [
+      "wss://nos.lol",
+      "wss://relay.primal.net"
+    ]
+  }
+}
