@@ -66,7 +66,7 @@ The file `diogel.io/.well-known/nostr.json` is a public [NIP-05](https://github.
 
 ### When you contact us
 
-If you email us, we use your email address and message to reply, and we keep the correspondence for as long as we need it to deal with your enquiry. [[CONFIRM: retention period for correspondence]]
+If you email us, we use your email address and message only to reply. We do not keep correspondence: we delete your email once we have dealt with your enquiry.
 
 - **Legal basis:** our legitimate interest in answering you, or steps you ask us to take before entering into a contract (Article 6(1)(f) or (b)).
 
@@ -95,7 +95,7 @@ Some providers are outside the UK and the EU.
 
 - **Hosting logs:** kept by Netlify for a short period, then deleted. [[CONFIRM: period]]
 - **Visitor statistics:** aggregate and anonymous, kept for as long as they are useful.
-- **Emails:** kept for as long as needed to deal with your enquiry. [[CONFIRM: period]]
+- **Emails:** deleted once we have dealt with your enquiry. We keep no archive of correspondence.
 - **Browser storage:** stays on your device until you clear it.
 
 ## Your rights
