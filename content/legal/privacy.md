@@ -45,12 +45,6 @@ We use **Fathom Analytics**, operated by Conva Ventures Inc. (Canada), to count 
 
 **Legal basis:** our legitimate interest in understanding which pages are useful so that we can improve the site, while using a provider designed to avoid identifying you (Article 6(1)(f)).
 
-### Icons
-
-Some pages load their small interface icons from the public **Iconify** icon service (`api.iconify.design`). Your browser fetches them directly, so the service receives your IP address and browser details like any web server. We do not send it anything else. [[CONFIRM: remove this section once icons are bundled into the site. See the planning notes.]]
-
-**Legal basis:** our legitimate interest in displaying the site correctly (Article 6(1)(f)).
-
 ### Data stored in your browser
 
 We do not use cookies. The site saves two kinds of data in your browser's local storage, and none of it is sent to us:
@@ -80,7 +74,6 @@ The site links to GitHub, the Chrome Web Store, Firefox Add-ons and Companies Ho
 |-----------|---------|----------|
 | Netlify, Inc. | Hosting and content delivery | United States, with a global edge network |
 | Conva Ventures Inc. (Fathom Analytics) | Cookieless visitor statistics | Canada; EU traffic stays on EU infrastructure |
-| Iconify (`api.iconify.design`) | Interface icons | [[CONFIRM: location, or remove once icons are bundled]] |
 
 Netlify and Fathom act as our processors under data processing agreements. We do not sell, rent or share personal information for advertising, and we do not use it for automated decisions that significantly affect you.
 
