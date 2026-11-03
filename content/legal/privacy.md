@@ -25,7 +25,7 @@ Diogel is a product of **Threenine Consulting Limited**, a company registered in
 - **Privacy contact:** [privacy@threenine.co.uk](mailto:privacy@threenine.co.uk)
 - **ICO registration number:** ZA904076
 
-We have not appointed a Data Protection Officer because our processing does not require one. [[CONFIRM: no DPO]]
+We have not appointed a Data Protection Officer. The law requires one only for public bodies and for organisations whose core activities involve large-scale monitoring of people or large-scale processing of sensitive data, and we do neither.
 
 ## What we collect and why
 
