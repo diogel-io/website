@@ -22,7 +22,7 @@ In short, this website has no accounts, no forms, no newsletter, no advertising 
 Diogel is a product of **Threenine Consulting Limited**, a company registered in England and Wales with company number 05608093 (VAT number GB 900383850). We are the controller of the personal data described in this policy.
 
 - **Postal address:** [[CONFIRM: correspondence address. The registered office is Limelight Accountancy Limited, 99 Wey Hill, Haslemere, Surrey, GU27 1HT. Confirm that this address should be published here, or give another one.]]
-- **Privacy contact:** [privacy@threenine.io](mailto:privacy@threenine.io) [[CONFIRM: this address is monitored]]
+- **Privacy contact:** [privacy@threenine.co.uk](mailto:privacy@threenine.co.uk)
 - **ICO registration number:** ZA904076
 
 We have not appointed a Data Protection Officer because our processing does not require one. [[CONFIRM: no DPO]]
@@ -102,7 +102,7 @@ Some providers are outside the UK and the EU.
 
 ### UK and EU visitors
 
-Under the UK GDPR and the EU GDPR, you can ask us to give you a copy of your data, or to correct, erase or restrict it. You can also object to processing we base on legitimate interests, and ask for your data in a portable format. To use these rights, email [privacy@threenine.io](mailto:privacy@threenine.io). We will reply within one month. Because we hold so little data that is linked to a name, we may be unable to find data about you from a website visit alone.
+Under the UK GDPR and the EU GDPR, you can ask us to give you a copy of your data, or to correct, erase or restrict it. You can also object to processing we base on legitimate interests, and ask for your data in a portable format. To use these rights, email [privacy@threenine.co.uk](mailto:privacy@threenine.co.uk). We will reply within one month. Because we hold so little data that is linked to a name, we may be unable to find data about you from a website visit alone.
 
 You can complain to the UK **Information Commissioner's Office** ([ico.org.uk](https://ico.org.uk), 0303 123 1113) or, in the EU, to the data protection authority where you live or work. We would appreciate the chance to resolve your concern first.
 
