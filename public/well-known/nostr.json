@@ -1,9 +1,14 @@
 {
   "names": {
+    "_": "56564ceaf5c3bd73ea809437ed88b7a3cafa26b897dbdd1492ab955bc6540a0d",
     "support": "62afd86213c15b085f78c731bc440d2a8867fc95297cd65c0d70d42d98b55222"
   },
   "relays": {
     "62afd86213c15b085f78c731bc440d2a8867fc95297cd65c0d70d42d98b55222": [
+      "wss://nos.lol",
+      "wss://relay.primal.net"
+    ],
+    "56564ceaf5c3bd73ea809437ed88b7a3cafa26b897dbdd1492ab955bc6540a0d": [
       "wss://nos.lol",
       "wss://relay.primal.net"
     ]
