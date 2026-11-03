@@ -23,7 +23,7 @@ Diogel is a product of **Threenine Consulting Limited**, a company registered in
 
 - **Postal address:** [[CONFIRM: correspondence address. The registered office is Limelight Accountancy Limited, 99 Wey Hill, Haslemere, Surrey, GU27 1HT. Confirm that this address should be published here, or give another one.]]
 - **Privacy contact:** [privacy@threenine.io](mailto:privacy@threenine.io) [[CONFIRM: this address is monitored]]
-- **ICO registration number:** [[CONFIRM: ICO data protection fee registration number (ZA…), or remove this line if the company is exempt]]
+- **ICO registration number:** ZA904076
 
 We have not appointed a Data Protection Officer because our processing does not require one. [[CONFIRM: no DPO]]
 
