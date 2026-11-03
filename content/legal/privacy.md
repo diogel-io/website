@@ -82,7 +82,7 @@ The site links to GitHub, the Chrome Web Store, Firefox Add-ons and Companies Ho
 | Conva Ventures Inc. (Fathom Analytics) | Cookieless visitor statistics | Canada; EU traffic stays on EU infrastructure |
 | Iconify (`api.iconify.design`) | Interface icons | [[CONFIRM: location, or remove once icons are bundled]] |
 
-Netlify and Fathom act as our processors under data processing agreements. [[CONFIRM: DPAs are accepted for both]] We do not sell, rent or share personal information for advertising, and we do not use it for automated decisions that significantly affect you.
+Netlify and Fathom act as our processors under data processing agreements. We do not sell, rent or share personal information for advertising, and we do not use it for automated decisions that significantly affect you.
 
 ## International transfers
 
