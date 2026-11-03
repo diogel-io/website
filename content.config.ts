@@ -100,5 +100,13 @@ export const collections = {
   docs: defineCollection({
     source: '1.docs/**/*',
     type: 'page'
+  }),
+  // Policy pages served at the site root, such as /privacy (app/pages/privacy.vue).
+  legal: defineCollection({
+    source: {
+      include: 'legal/**/*.md',
+      prefix: '/'
+    },
+    type: 'page'
   })
 }

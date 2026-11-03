@@ -20,6 +20,12 @@ const columns = [{
     label: 'GitHub',
     to: 'https://github.com/diogel-io'
   }]
+}, {
+  label: 'Legal',
+  children: [{
+    label: 'Privacy Policy',
+    to: '/privacy'
+  }]
 }]
 </script>
 
