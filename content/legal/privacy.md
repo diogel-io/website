@@ -31,7 +31,7 @@ We have not appointed a Data Protection Officer because our processing does not 
 
 ### When you load a page
 
-Our website is hosted by **Netlify, Inc.** When your browser asks for a page, Netlify's servers necessarily receive your IP address, the page you asked for, the date and time, your browser's user-agent string and the referring page. Netlify uses this to deliver the site and to protect it against abuse, and it keeps the data in its access logs for a limited period. [[CONFIRM: log retention for the diogel.io Netlify plan]]
+Our website is hosted by **Netlify, Inc.** When your browser asks for a page, Netlify's servers necessarily receive your IP address, the page you asked for, the date and time, your browser's user-agent string and the referring page. Netlify uses this to deliver the site and to protect it against abuse, and it keeps the data in its access logs for up to 7 days.
 
 - **Legal basis (UK and EU GDPR):** our legitimate interest in running a secure, working website (Article 6(1)(f)).
 
@@ -93,7 +93,7 @@ Some providers are outside the UK and the EU.
 
 ## How long we keep data
 
-- **Hosting logs:** kept by Netlify for a short period, then deleted. [[CONFIRM: period]]
+- **Hosting logs:** kept by Netlify for up to 7 days, then deleted.
 - **Visitor statistics:** aggregate and anonymous, kept for as long as they are useful.
 - **Emails:** deleted once we have dealt with your enquiry. We keep no archive of correspondence.
 - **Browser storage:** stays on your device until you clear it.
