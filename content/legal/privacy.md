@@ -4,11 +4,9 @@ description: How the diogel.io website handles personal data for visitors in the
 seo:
   description: "What diogel.io collects, who processes it and your rights under the UK GDPR, the EU GDPR, US state privacy laws and Canada's PIPEDA."
 ---
-
 <!--
-DRAFT (feature/website-privacy-policy). Not legal advice and not yet reviewed by a lawyer.
-Every [[CONFIRM: ...]] marker is a fact or decision the owner must supply before this page ships.
-Planning notes: ~/Documents/diogel/50-operations/legal/website-privacy-policy.md
+Planning notes and the data audit behind this policy: ~/Documents/diogel/50-operations/legal/website-privacy-policy.md
+Update this page whenever the site adds a form, cookies or another third-party service.
 -->
 
 **Effective date:** September 2026
@@ -40,8 +38,8 @@ Our website is hosted by **Netlify, Inc.** When your browser asks for a page, Ne
 We use **Fathom Analytics**, operated by Conva Ventures Inc. (Canada), to count visits. Fathom tells us which pages are viewed, the referring site, and the country, browser and device type in aggregate.
 
 - Fathom sets **no cookies** and stores nothing on your device.
-- Fathom does not keep your IP address. It uses a one-way hash, rotated daily, to tell new visits from repeat ones, then discards it. The statistics we see cannot identify you.
-- Visitors in the EU are processed through Fathom's EU infrastructure.
+- Fathom does not store your IP address. To tell new visitors from returning ones, it creates a one-way hash of your IP address, browser details and our site ID, combined with a salt that changes every day. It stores that hash with each visit record. Because the salt changes daily, the hash cannot link your visits across days or across websites. The statistics we see cannot identify you.
+- Visits from the EU are routed to Fathom's servers in the EU, which strip the IP address before the anonymised visit is sent to Fathom's US servers. Visits from elsewhere, including the UK, go to Fathom's US servers, which anonymise them there.
 
 **Legal basis:** our legitimate interest in understanding which pages are useful so that we can improve the site, while using a provider designed to avoid identifying you (Article 6(1)(f)).
 
@@ -73,7 +71,7 @@ The site links to GitHub, the Chrome Web Store, Firefox Add-ons and Companies Ho
 | Recipient | Purpose | Location |
 |-----------|---------|----------|
 | Netlify, Inc. | Hosting and content delivery | United States, with a global edge network |
-| Conva Ventures Inc. (Fathom Analytics) | Cookieless visitor statistics | Canada; EU traffic stays on EU infrastructure |
+| Conva Ventures Inc. (Fathom Analytics) | Cookieless visitor statistics | Canadian company; servers in the EU (EU visits only) and the United States |
 
 Netlify and Fathom act as our processors under data processing agreements. We do not sell, rent or share personal information for advertising, and we do not use it for automated decisions that significantly affect you.
 
@@ -81,7 +79,7 @@ Netlify and Fathom act as our processors under data processing agreements. We do
 
 Some providers are outside the UK and the EU.
 
-- **Canada (Fathom):** the European Commission and the UK both recognise Canada as providing adequate protection for commercial data.
+- **Fathom:** for EU visitors, the IP address is removed in the EU, so only anonymised data reaches the United States. Other visitors' requests, including those from the UK, go to Fathom's US servers, and those transfers are covered by Fathom's data processing agreement.
 - **United States (Netlify):** Netlify, Inc. is certified under the EU–US Data Privacy Framework and its UK Extension, and transfers to Netlify rely on those frameworks.
 
 ## How long we keep data
@@ -98,8 +96,6 @@ Some providers are outside the UK and the EU.
 Under the UK GDPR and the EU GDPR, you can ask us to give you a copy of your data, or to correct, erase or restrict it. You can also object to processing we base on legitimate interests, and ask for your data in a portable format. To use these rights, email [privacy@threenine.co.uk](mailto:privacy@threenine.co.uk). We will reply within one month. Because we hold so little data that is linked to a name, we may be unable to find data about you from a website visit alone.
 
 You can complain to the UK **Information Commissioner's Office** ([ico.org.uk](https://ico.org.uk), 0303 123 1113) or, in the EU, to the data protection authority where you live or work. We would appreciate the chance to resolve your concern first.
-
-[[CONFIRM WITH A LAWYER: whether an EU representative under Article 27 GDPR is needed. If it is, name the representative here.]]
 
 ### United States visitors
 
