@@ -11,7 +11,7 @@ Every [[CONFIRM: ...]] marker is a fact or decision the owner must supply before
 Planning notes: ~/Documents/diogel/50-operations/legal/website-privacy-policy.md
 -->
 
-**Effective date:** [[CONFIRM: publication date]]
+**Effective date:** September 2026
 
 This policy covers the **diogel.io** website only: the marketing pages, the documentation and the Nostr address file at `diogel.io/.well-known/nostr.json`. The Diogel products (Porwr, Symudol and Bancwr) run on your own device or server and have their own privacy notices. For example, [Porwr's privacy policy](https://github.com/diogel-io/porwr/blob/master/PRIVACY.md) explains that the extension does not collect or process personal information.
 
