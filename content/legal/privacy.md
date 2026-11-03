@@ -89,7 +89,7 @@ Netlify and Fathom act as our processors under data processing agreements. We do
 Some providers are outside the UK and the EU.
 
 - **Canada (Fathom):** the European Commission and the UK both recognise Canada as providing adequate protection for commercial data.
-- **United States (Netlify):** transfers rely on the EU–US Data Privacy Framework and its UK Extension, or on the European Commission's Standard Contractual Clauses with the UK Addendum, as set out in Netlify's data processing agreement. [[CONFIRM: which mechanism Netlify's current DPA uses]]
+- **United States (Netlify):** Netlify, Inc. is certified under the EU–US Data Privacy Framework and its UK Extension, and transfers to Netlify rely on those frameworks.
 
 ## How long we keep data
 
