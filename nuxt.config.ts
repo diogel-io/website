@@ -77,6 +77,32 @@ export default defineNuxtConfig({
     siteId: process.env.fathom_analytics_id
   },
 
+  // Bundle every icon into the client so pages never fetch from api.iconify.design, which would
+  // send visitors' IP addresses to a third party (see the privacy policy). The scan finds the
+  // icons the site names; the list adds the defaults Nuxt UI's own components use.
+  icon: {
+    fallbackToApi: false,
+    clientBundle: {
+      scan: {
+        // Docs sidebar icons live in content/**/.navigation.yml, so dotfiles must not be excluded.
+        globInclude: ['app/**/*.{vue,ts}', 'content/**/*.{yml,md}', 'content/**/.navigation.yml'],
+        globExclude: ['node_modules', '.nuxt', '.output', 'dist']
+      },
+      icons: [
+        'lucide:arrow-down', 'lucide:arrow-left', 'lucide:arrow-right', 'lucide:arrow-up',
+        'lucide:arrow-up-right', 'lucide:check', 'lucide:chevron-down', 'lucide:chevron-left',
+        'lucide:chevron-right', 'lucide:chevron-up', 'lucide:chevrons-left', 'lucide:chevrons-right',
+        'lucide:circle-alert', 'lucide:circle-check', 'lucide:circle-x', 'lucide:copy',
+        'lucide:copy-check', 'lucide:ellipsis', 'lucide:eye', 'lucide:eye-off', 'lucide:file',
+        'lucide:folder', 'lucide:folder-open', 'lucide:grip-vertical', 'lucide:hash', 'lucide:info',
+        'lucide:lightbulb', 'lucide:loader-circle', 'lucide:menu', 'lucide:minus', 'lucide:monitor',
+        'lucide:moon', 'lucide:panel-left-close', 'lucide:panel-left-open', 'lucide:plus',
+        'lucide:rotate-ccw', 'lucide:search', 'lucide:square', 'lucide:sun', 'lucide:terminal',
+        'lucide:triangle-alert', 'lucide:upload', 'lucide:x'
+      ]
+    }
+  },
+
   // Built at prerender time from the crawled routes (#73). The redirects are not pages.
   sitemap: {
     zeroRuntime: true,
