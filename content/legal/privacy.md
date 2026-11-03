@@ -35,7 +35,7 @@ We use **Fathom Analytics**, operated by Conva Ventures Inc. (Canada), to count 
 
 - Fathom sets **no cookies** and stores nothing on your device.
 - Fathom does not store your IP address. To tell new visitors from returning ones, it creates a one-way hash of your IP address, browser details and our site ID, combined with a salt that changes every day. It stores that hash with each visit record. Because the salt changes daily and the hash is tied to our site, it is designed so that your visits are not linked across days or across websites. Our dashboard shows only aggregate statistics, and we do not try to identify individual visitors. Page addresses and referrers are recorded as they arrive, so they can include whatever a linking site puts in its URL.
-- Visits from the UK, the EU, Iceland, Liechtenstein, Norway and Switzerland are routed to Fathom's servers in the EU, which strip the IP address before the anonymised visit is sent to Fathom's US servers. Visits from elsewhere, including North America, go straight to Fathom's US servers, which anonymise them there.
+- Visits from the UK, the EU, Iceland, Liechtenstein, Norway and Switzerland are routed to Fathom's servers in the EU, which remove the IP address before sending the visit data to Fathom's US servers. Visits from elsewhere, including North America, go straight to Fathom's US servers, which remove the IP address there.
 
 **Legal basis:** our legitimate interest in understanding which pages are useful so that we can improve the site, while using a provider designed to avoid identifying you (Article 6(1)(f)).
 
@@ -67,7 +67,7 @@ The site links to GitHub, the Chrome Web Store, Firefox Add-ons and Companies Ho
 | Recipient | Purpose | Location |
 |-----------|---------|----------|
 | Netlify, Inc. | Hosting and content delivery | United States, with a global edge network |
-| Conva Ventures Inc. (Fathom Analytics) | Cookieless visitor statistics | Canadian company; servers in the EU (UK and European visits) and the United States |
+| Conva Ventures Inc. (Fathom Analytics) | Cookieless visitor statistics | Canadian company; servers in the EU for UK, EU, Iceland, Liechtenstein, Norway and Switzerland visits, and in the United States for other visits |
 
 Netlify and Fathom act as our processors under data processing agreements. We do not sell, rent or share personal information for advertising, and we do not use it for automated decisions that significantly affect you.
 
@@ -75,7 +75,7 @@ Netlify and Fathom act as our processors under data processing agreements. We do
 
 Some providers are outside the UK and the EU.
 
-- **Fathom:** for visitors in the UK and Europe, the IP address is removed on Fathom's EU servers, so only anonymised data reaches the United States. Visitors from elsewhere, including the US and Canada, send their requests to Fathom's US servers under Fathom's data processing agreement.
+- **Fathom:** for visitors in the UK, the EU, Iceland, Liechtenstein, Norway and Switzerland, Fathom removes the IP address on its EU servers before sending the visit data to the United States. Visitors from elsewhere, including the US and Canada, send their requests to Fathom's US servers under Fathom's data processing agreement.
 - **United States (Netlify):** Netlify, Inc. is certified under the EU–US Data Privacy Framework and its UK Extension, and transfers to Netlify rely on those frameworks.
 
 ## How long we keep data
