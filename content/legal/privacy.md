@@ -7,7 +7,7 @@ seo:
 
 **Effective date:** September 2026
 
-This policy covers the **diogel.io** website only: the marketing pages, the documentation and the Nostr address file at `diogel.io/.well-known/nostr.json`. The Diogel products (Porwr, Symudol and Bancwr) run on your own device or server and have their own privacy notices. For example, [Porwr's privacy policy](https://github.com/diogel-io/porwr/blob/master/PRIVACY.md) explains that the extension does not collect or process personal information.
+This policy covers the **diogel.io** website only: the marketing pages, the documentation and the Nostr address file at `diogel.io/.well-known/nostr.json`. The Diogel products (Porwr, Symudol and Bancwr) run on your own device or server and have their own privacy notices. For example, [Porwr's privacy policy](https://github.com/diogel-io/porwr/blob/master/PRIVACY.md) explains that the extension does not collect or process personal information, and [Symudol's privacy policy](/privacy/symudol) explains what the Android app stores and sends.
 
 In short, this website has no accounts, no forms, no newsletter, no advertising and no cookies. We do not sell or share your personal information. The only personal data involved is the technical data any website receives when you visit, and our privacy-focused, cookieless visitor counts.
 

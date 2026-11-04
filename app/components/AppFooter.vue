@@ -25,6 +25,9 @@ const columns = [{
   children: [{
     label: 'Privacy Policy',
     to: '/privacy'
+  }, {
+    label: 'Symudol Privacy',
+    to: '/privacy/symudol'
   }]
 }]
 </script>
