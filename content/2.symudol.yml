@@ -6,6 +6,12 @@ seo:
 hero:
   headline: Symudol
   links:
+    - label: Get it on Zapstore
+      to: https://zapstore.dev/apps/io.diogel.symudol
+      icon: i-lucide-download
+      color: neutral
+      variant: outline
+      target: _blank
     - label: View Source
       to: https://github.com/diogel-io/symudol
       icon: i-simple-icons-github
@@ -97,9 +103,13 @@ features:
       description: Dedicated signer, not a social client or wallet
       icon: i-lucide-crosshair
 cta:
-  title: Symudol is coming soon to Android
-  description: A dedicated Nostr signer that keeps your keys safe on mobile. Watch this space.
+  title: Start signing safely on your phone
+  description: Install Symudol and keep your Nostr keys out of the apps that ask for them.
   links:
+    - label: Get it on Zapstore
+      to: https://zapstore.dev/apps/io.diogel.symudol
+      icon: i-lucide-download
+      target: _blank
     - label: View Source
       to: https://github.com/diogel-io/symudol
       icon: i-simple-icons-github
